@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8"/>
+        <title>NV Labs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+            <base href="/">
+
+        <!-- Bootstrap Core CSS -->
+        <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Custom CSS -->
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+        <link href="css/github-markdown.css" rel="stylesheet" type="text/css"/>
+        
+        <!-- Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+    </head>
+
+    <body id="body" data-spy="scroll" data-target=".header">
+
+        <!--========== HEADER ==========-->
+        <header class="header navbar-fixed-top">
+            <!-- Navbar -->
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="menu-container js_nav-item">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a class="logo-wrap" href="#body">
+                                <img class="logo-img logo-img-main" src="img/logo.png" alt="NVLabs Logo">
+                                <img class="logo-img logo-img-active" src="img/logo-dark.png" alt="NVLabs Logo">
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <ul class="nav navbar-nav navbar-nav-right">
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#platform">Platform</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#pricing">Simulator</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#showcase">Showcase</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#support">Learn</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">About</a></li>
+                            </ul> 
+                        </div>
+                    </div>
+                    <!-- End Navbar Collapse -->
+                </div>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--========== END HEADER ==========-->
+
+        <!--========== SLIDER ==========-->
+        <div id="carousel-home" class="carousel slide" data-ride="carousel">
+<!--
+            <div class="container">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                </ol>
+            </div>
+-->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="img/1920x1080/01.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-30">
+                                <h1 class="carousel-title">A little energy, <br> a lot of possibilities</h1>
+<!--                                <p class="color-white carousel-subtitle">Create energy-efficient IoT solutions with nonvolatile processor</p>-->
+                            </div>
+                            <a href="#" class="btn-theme btn-theme-sm btn-white-brd carousel-btn text-uppercase"><i class="fa fa-play" aria-hidden="true"></i> Nonvolatile Processor in 1 minute</a>
+                        </div>
+                    </div>
+                </div>
+<!--
+                <div class="item">
+                    <img class="img-responsive" src="img/1920x1080/02.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <h2 class="carousel-title">Hi-Tech Design</h2>
+                                <p class="color-white">Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>
+                            </div>
+                            <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Explore</a>
+                        </div>
+                    </div>
+                </div>
+-->
+            </div>
+        </div>
+        <!--========== SLIDER ==========-->
+
+        <!--========== PAGE LAYOUT ==========-->
+        <!-- Intro -->
+        <div id="intro">
+            <div class="content-lg container">
+                <div class="intro-title margin-b-60">
+                    <p>WELCOME TO NVLABS</p>
+                    <h1>Create Energy-Efficient IoT Solutions <br>With Nonvolatile Processors </h1>
+                </div>
+                <!-- Masonry Grid -->
+                <div class="masonry-grid row">
+                    <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
+                    <div class="masonry-grid-item intro-item col-xs-12 col-sm-6 col-md-6">
+                        <div class="margin-b-30">
+                            <img class="intro-icon img-responsive wow fadeInUp" src="img/500x500/platform.png" alt="Development Platform" data-wow-duration=".3" data-wow-delay=".3s">
+                        </div>
+                        <h2 class="margin-b-5">NVPEval Platform</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
+                        <a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">Explore</a>                    
+                    </div>
+                    <div class="masonry-grid-item intro-item col-xs-12 col-sm-6 col-md-6">
+                        <div class="margin-b-30">
+                            <img class="main-business-icon img-responsive wow fadeInUp" src="img/500x500/simulator.png" alt="NVPSim Simulator" data-wow-duration=".3" data-wow-delay=".3s">
+                        </div>
+                        <h2 class="margin-b-5">Gem5-NVP Simulator</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
+                        <a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">Explore</a>
+                    </div>
+                </div>
+                <!-- End Masonry Grid -->
+            </div>
+        </div>
+        <!-- End Intro -->
+        
+        <!-- Showcase -->
+        <div id="showcase" class="bg-color-sky-light">
+            <div class="content-lg container">
+                <div class="showcase-title margin-b-50">
+                    <h1 class="margin-b-10">Showcase</h1>
+                    <p class="text-uppercase">Real-world applications built with nonvolatile processor</p>
+                </div>
+                <!--// end row -->
+
+                <div class="row">
+                    <!-- Latest Products -->
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="showcase-item margin-b-20">
+                            <img class="img-responsive" src="img/970x647/01.jpg" alt="Latest Products Image">
+                            <div class="play-wrapper"><div class="test"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div></div>
+                        </div>
+                        <h4><a href="#">Breath Monitor </a><span class="text-uppercase margin-l-20 visible-lg-inline">Smart Healthcare</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                        <a class="link" href="#">Read More</a>
+                    </div>
+                    <!-- End Latest Products -->
+
+                    <!-- Latest Products -->
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="margin-b-20">
+                            <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
+                        </div>
+                        <h4><a href="#">UV Patch</a> <span class="text-uppercase margin-l-20 visible-lg-inline">Wearable Device</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                        <a class="link" href="#">Read More</a>
+                    </div>
+                    <!-- End Latest Products -->
+
+                    <!-- Latest Products -->
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="margin-b-20">
+                            <img class="img-responsive" src="img/970x647/03.jpg" alt="Latest Products Image">
+                        </div>
+                        <h4><a href="#">Bridge Monitoring System</a> <span class="margin-l-20 visible-lg-inline">IoT</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                        <a class="link" href="#">Read More</a>
+                    </div>
+                    <!-- End Latest Products -->
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+        <!-- End Showcase -->
+        
+        <div id="platform">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-lg-9 col-lg-offset-2">
+                        <div class="product-title">
+                             <h1 data-spy="affix" data-offset-top="40" data-smooth-scroll="true">NVPEval Platform <small>REV0</small></h1>
+                        </div>
+                        <div class="row product-intro margin-b-50">
+                            <div class="col-xs-7 platform-carousel">
+                                <div id="carouselPlatform" class="carousel slide margin-b-10" data-ride="carousel">
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="img/platform/01.jpg" alt="NVPEval Front">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="img/platform/01.jpg" alt="NVPEval Front">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="img/platform/01.jpg" alt="NVPEval Front">
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive" src="img/platform/01.jpg" alt="NVPEval Front">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-5">
+                                <p class="margin-l-40 margin-t-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="row thumbs">
+                                    <a class="col-xs-3" data-target="#carouselPlatform" data-slide-to="0">
+                                        <img class="img-responsive img-thumbnail" id="platform-carousel-thumb-0" src="img/platform/01.jpg">
+                                    </a>
+                                    <a class="col-xs-3" data-target="#carouselPlatform" data-slide-to="1">
+                                        <img class="img-responsive img-thumbnail" id="platform-carousel-thumb-0" src="img/platform/01.jpg">
+                                    </a>
+                                    <a class="col-xs-3" data-target="#carouselPlatform" data-slide-to="2">
+                                        <img class="img-responsive img-thumbnail" id="platform-carousel-thumb-0" src="img/platform/01.jpg">
+                                    </a>
+                                    <a class="col-xs-3" data-target="#carouselPlatform" data-slide-to="3">
+                                        <img class="img-responsive img-thumbnail" id="platform-carousel-thumb-0" src="img/platform/01.jpg">
+                                    </a>
+                                </div>  
+                            </div>
+                            <div class="col-xs-5">
+                                <div class="margin-l-40">
+                                    <button href="#" class="btn-theme btn-white-bg btn-block text-uppercase">Buy Now</button>
+                                    <button href="#" class="btn-theme btn-color1-bg btn-block text-uppercase">Get Started</button>
+                                </div>                                           
+                            </div>
+                        </div>
+                        <div class="product-nav">
+                            <div class="nav-wrapper" data-spy="affix" data-offset-top="497" data-smooth-scroll="true">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#overview">OVERVIEW</a></li>
+                                    <li><a data-toggle="tab" href="#techSpecs">TECH SPECS</a></li>
+                                    <li><a data-toggle="tab" href="#downloads" onClick="window.scroll(0, 497)">DOWNLOADS</a></li>
+                                </ul>
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="tab-content">
+                                <div id="overview" class="tab-pane fade in active">
+                                    <div class="section">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                                    </div>
+                                    <div class="section">
+                                        <h2>Features</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+                                        <ul>
+                                            <li>The First Feature</li>
+                                            <li>The Second Feature</li>
+                                            <li>The Third Feature</li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        </p>
+                                        <figure class="figure margin-b-20">
+                                            <img src="img/970x647/02.jpg" class="img-responsive rounded" alt="This is a figure.">
+    <!--                                        <figcaption class="figure-caption">This is a figure</figcaption>-->
+                                        </figure>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non   
+                                        </p>
+                                    </div>
+                                    <div class="section">
+                                        <h2>Getting Started</h2>
+                                        <p><a href="#">This is a link. </a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+                                    </div>
+                                </div>
+                                <div id="techSpecs" class="tab-pane fade">
+                                    <table class="table table-striped table-hover">
+                                        <tbody>
+                                            <tr>
+                                                <td>Microcontroller</td>
+                                                <td>8051</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Operating Voltage</td>
+                                                <td>3.3 V</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Clock Speed</td>
+                                                <td>25 MHz</td>
+                                            </tr>
+                                            <tr>
+                                                <td>DC Current</td>
+                                                <td>10 mA @ 25 MHz, 2 mA @ Backup, 3 mA @ Restore</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Digital I/O Pins</td>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Flash Memory</td>
+                                                <td>64 KB</td>
+                                            </tr>
+                                            <tr>
+                                                <td>FeRAM</td>
+                                                <td>16 KB</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Backup Speed</td>
+                                                <td>2 Clock Cycles</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Restore Speed</td>
+                                                <td>2 Clock Cycles</td>
+                                            </tr>
+                                            <tr>
+                                                <td>UART</td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>I2C</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Length</td>
+                                                <td>100 mm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Width</td>
+                                                <td>55.6 mm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Height</td>
+                                                <td>12.2 mm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Weight</td>
+                                                <td>145 g</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="downloads" class="tab-pane fade">
+                                    <div class="section">
+                                        <h2>Schematics</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <button href="#" class="btn-theme btn-theme-lg btn-color3-bg margin-r-20"><i class="fa fa-download margin-r-10"></i>Schematics in .PDF</button> 
+                                        <button href="#" class="btn-theme btn-theme-lg btn-color2-bg margin-r-20"><i class="fa fa-download margin-r-10"></i>PCB Project in .ZIP</button> 
+                                        
+                                    </div>
+                                    <div class="section">
+                                        <h2>THU-1010N Datasheet</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        
+                                        <button href="#" class="btn-theme btn-theme-lg btn-color1-bg margin-r-20"><i class="fa fa-download margin-r-10"></i>Datasheet in .pdf</button>
+                                    </div>
+                                    <div class="section">
+                                        <h2>Coding Examples</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        
+                                        <button href="#" class="btn-theme btn-theme-lg btn-color4-bg margin-r-20"><i class="fa fa-download margin-r-10"></i>Examples in .zip</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Platform -->
+        
+        <div id="simulator">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-lg-9 col-lg-offset-2">
+                        <div class="product-title">
+                            <h1 data-spy="affix" data-offset-top="40" data-smooth-scroll="true">Gem5-NVP Simulator</h1>
+                        </div>
+                        <div class="row product-intro margin-b-20 margin-t-30">
+                            <div class="col-xs-8">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="margin-t-5">
+                                    <button href="#" class="btn-theme btn-color1-bg btn-block text-uppercase">Get Started</button>
+                                    <button href="#" class="btn-theme btn-white-bg btn-block text-uppercase">Learn More</button>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="product-nav">
+                            <div class="nav-wrapper" data-spy="affix" data-offset-top="267" data-smooth-scroll="true">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#simOverview">OVERVIEW</a></li>
+                                    <li><a data-toggle="tab" href="#simGettingStarted">GETTING STARTED</a></li>
+                                    <li><a data-toggle="tab" href="#simDownloads">DOCUMENTATION</a></li>
+                                    <li><a data-toggle="tab" href="#simDocumentation">EXAMPLES</a></li>
+                                </ul>
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="tab-content">
+                                <div id="simOverview" class="tab-pane fade in active">
+                                    <div class="section">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                                    </div>
+                                    <div class="section">
+                                        <h2>Features</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+                                        <ul>
+                                            <li>The First Feature</li>
+                                            <li>The Second Feature</li>
+                                            <li>The Third Feature</li>
+                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        </p>
+                                        <figure class="figure margin-b-20">
+                                            <img src="img/970x647/02.jpg" class="img-responsive rounded" alt="This is a figure.">
+    <!--                                        <figcaption class="figure-caption">This is a figure</figcaption>-->
+                                        </figure>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non   
+                                        </p>
+                                    </div>
+                                    <div class="section">
+                                        <h2>Getting Started</h2>
+                                        <p><a href="#">This is a link. </a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+                                    </div>
+                                </div>
+                                <div id="simGettingStarted" class="tab-pane fade">
+                                    <p>The gem5-NVP is a simulating framework for non-volatile processors (NVP) and non-volatile systems based on the gem5 simulator. It provides multiple interfaces for adding description of SimObjects' energy behavior as well as an energy management module which allows users to simulate state changes (power-on, power-off, etc.) easily.</p>
+<!--
+                                    <h2>
+                                    <a id="user-content-contents" class="anchor" href="#contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contents</h2>
+                                    <ul>
+                                    <li><a href="#contents">Contents</a></li>
+                                    <li><a href="#prereq">Pre-Requirement</a></li>
+                                    <li><a href="#download">Download</a></li>
+                                    <li><a href="#build">Build</a></li>
+                                    <li><a href="#usages">Usages</a></li>
+                                    </ul>
+-->
+                                    <h2>
+                                    <a id="user-content-pre-requirement" class="anchor" href="#pre-requirement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pre-Requirement</h2>
+                                    <p>Gem5-NVP depends on nothing besides the dependencies of gem5 simulator. Tools needed before building gem5-NVP can be found at <a href="http://www.gem5.org/Dependencies">http://www.gem5.org/Dependencies</a>.</p>
+                                    <h2>
+                                    <a id="user-content-download" class="anchor" href="#download" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download</h2>
+                                    <p>Gem5-NVP uses github to control its version. The latest version can be found at <a href="https://github.com/zlfben/gem5">https://github.com/zlfben/gem5</a>, and there are previous versions among tags of the repository (nvp-v*.*). You can get the latest stable version like this:</p>
+                                    <div class="highlight highlight-source-shell"><pre>git clone https://github.com/zlfben/gem5.git 
+                                    <span class="pl-c1">cd</span> gem5 
+                                    git checkout nvp-v2.0</pre></div>
+                                    <h2>
+                                    <a id="user-content-build" class="anchor" href="#build" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build</h2>
+                                    <p>The build process of gem5-NVP is almost the same as gem5 simulator. Scons is used to build target system to be simulated. Theoretically, different ISAs are supported by gem5-NVP. However, gem5-NVP is tested under ARM, so the following build option is recommended:</p>
+                                    <div class="highlight highlight-source-shell"><pre>mv README.md README
+scons build/ARM/gem5.debug</pre></div>
+                                    <p>One tricky thing is that gem5 checks its original raw README during its build, so we can simply rename README.md into README. Markdown file is used only for better github page.</p>
+                                    <h2>
+                                    <a id="user-content-usages" class="anchor" href="#usages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usages</h2>
+                                    <h4>
+                                    <a id="user-content-simulation-via-custom-simulation-script" class="anchor" href="#simulation-via-custom-simulation-script" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Simulation via Custom Simulation Script</h4>
+                                    <p>Although gem5-NVP provides a simulation script that recieves arguments to control the whole system, we highly recommand that users need to understand how the system is assembled on the python side. Thus, we will introduce how to configure gem5-NVP, especially the energy part, in the python side. Here is a simple configuration python code of gem5 which is compatible with gem5-NVP but does not contain energy behavior:</p>
+                                    <div class="highlight highlight-source-python"><pre><span class="pl-k">import</span> m5
+                                    <span class="pl-k">from</span> m5.objects <span class="pl-k">import</span> <span class="pl-k">*</span>
+
+                                    system <span class="pl-k">=</span> System()
+                                    system.clk_domain <span class="pl-k">=</span> SrcClockDomain()
+                                    system.clk_domain.clock <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>1MHz<span class="pl-pds">'</span></span>
+                                    system.clk_domain.voltage_domain <span class="pl-k">=</span> VoltageDomain()
+                                    system.mem_mode <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>atomic<span class="pl-pds">'</span></span>
+                                    system.mem_ranges <span class="pl-k">=</span> [AddrRange(<span class="pl-s"><span class="pl-pds">'</span>512MB<span class="pl-pds">'</span></span>)]
+
+                                    system.cpu <span class="pl-k">=</span> AtomicSimpleCPU()
+
+                                    system.membus <span class="pl-k">=</span> SystemXBar()
+
+                                    system.cpu.icache_port <span class="pl-k">=</span> system.membus.slave
+                                    system.cpu.dcache_port <span class="pl-k">=</span> system.membus.slave
+
+                                    system.cpu.createInterruptController()
+
+                                    system.mem_ctrl <span class="pl-k">=</span> DDR3_1600_x64()
+                                    system.mem_ctrl.range <span class="pl-k">=</span> system.mem_ranges[<span class="pl-c1">0</span>]
+                                    system.mem_ctrl.port <span class="pl-k">=</span> system.membus.master
+
+                                    system.system_port <span class="pl-k">=</span> system.membus.slave
+
+                                    process <span class="pl-k">=</span> LiveProcess()
+                                    process.cmd <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">'</span>tests/test-progs/hello/bin/arm/linux/hello<span class="pl-pds">'</span></span>]
+                                    system.cpu.workload <span class="pl-k">=</span> process
+                                    system.cpu.createThreads()
+
+                                    root <span class="pl-k">=</span> Root(<span class="pl-v">full_system</span> <span class="pl-k">=</span> <span class="pl-c1">False</span>, <span class="pl-v">system</span> <span class="pl-k">=</span> system)
+                                    m5.instantiate()
+
+                                    <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">"</span>Beginning simulation!<span class="pl-pds">"</span></span>
+                                    exit_event <span class="pl-k">=</span> m5.simulate()
+                                    <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">'</span>Exiting @ tick <span class="pl-c1">%i</span> because <span class="pl-c1">%s</span><span class="pl-pds">'</span></span> <span class="pl-k">%</span> (m5.curTick(), exit_event.getCause())</pre></div>
+                                    <p>To simulate energy-aware systems, we need to add several things to the original python code:</p>
+                                    <ul>
+                                    <li>add a energy management module and connect it to other parts of the system</li>
+                                    <li>determine how much energy other parts in the system consume in a certain time unit
+                                    Here is an example code:</li>
+                                    </ul>
+                                    <div class="highlight highlight-source-python"><pre><span class="pl-k">import</span> m5
+                                    <span class="pl-k">from</span> m5.objects <span class="pl-k">import</span> <span class="pl-k">*</span>
+
+                                    system <span class="pl-k">=</span> System()
+                                    system.clk_domain <span class="pl-k">=</span> SrcClockDomain()
+                                    system.clk_domain.clock <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>1MHz<span class="pl-pds">'</span></span>
+                                    system.clk_domain.voltage_domain <span class="pl-k">=</span> VoltageDomain()
+                                    system.mem_mode <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>atomic<span class="pl-pds">'</span></span>
+                                    system.mem_ranges <span class="pl-k">=</span> [AddrRange(<span class="pl-s"><span class="pl-pds">'</span>512MB<span class="pl-pds">'</span></span>)]
+
+                                    system.cpu <span class="pl-k">=</span> AtomicSimpleCPU()
+
+                                    <span class="pl-c"><span class="pl-c">#</span> Energy management module of the system</span>
+                                    system.energy_mgmt <span class="pl-k">=</span> EnergyMgmt()
+                                    <span class="pl-c"><span class="pl-c">#</span> Tell EnergyMgmt the path to the energy profile</span>
+                                    system.energy_mgmt.path_energy_profile <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>profile/energy_prof<span class="pl-pds">'</span></span>
+                                    <span class="pl-c"><span class="pl-c">#</span> Tell EnergyMgmt the time unit of the energy profile</span>
+                                    system.energy_time_unit <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>10us<span class="pl-pds">'</span></span>
+                                    <span class="pl-c"><span class="pl-c">#</span> Connect the energy port of the cpu to the one of EnergyMgmt</span>
+                                    <span class="pl-c"><span class="pl-c">#</span> Every SimObject has s_energy_port and m_energy_port. If you </span>
+                                    <span class="pl-c"><span class="pl-c">#</span> want a SimObject to be under the control of EnergyMgmt, you</span>
+                                    <span class="pl-c"><span class="pl-c">#</span> should connect its s_energy_port to EnergyMgmt's m_enrgy_port </span>
+                                    <span class="pl-c"><span class="pl-c">#</span> using "=".</span>
+                                    system.cpu.s_energy_port <span class="pl-k">=</span> system.energy_mgmt.m_energy_port
+
+                                    system.membus <span class="pl-k">=</span> SystemXBar()
+
+                                    system.cpu.icache_port <span class="pl-k">=</span> system.membus.slave
+                                    system.cpu.dcache_port <span class="pl-k">=</span> system.membus.slave
+
+                                    system.cpu.createInterruptController()
+
+                                    system.mem_ctrl <span class="pl-k">=</span> DDR3_1600_x64()
+                                    system.mem_ctrl.range <span class="pl-k">=</span> system.mem_ranges[<span class="pl-c1">0</span>]
+                                    system.mem_ctrl.port <span class="pl-k">=</span> system.membus.master
+
+                                    system.system_port <span class="pl-k">=</span> system.membus.slave
+
+                                    process <span class="pl-k">=</span> LiveProcess()
+                                    process.cmd <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">'</span>tests/test-progs/hello/bin/arm/linux/hello<span class="pl-pds">'</span></span>]
+                                    system.cpu.workload <span class="pl-k">=</span> process
+                                    system.cpu.createThreads()
+
+                                    root <span class="pl-k">=</span> Root(<span class="pl-v">full_system</span> <span class="pl-k">=</span> <span class="pl-c1">False</span>, <span class="pl-v">system</span> <span class="pl-k">=</span> system)
+                                    m5.instantiate()
+
+                                    <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">"</span>Beginning simulation!<span class="pl-pds">"</span></span>
+                                    exit_event <span class="pl-k">=</span> m5.simulate()
+                                    <span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">'</span>Exiting @ tick <span class="pl-c1">%i</span> because <span class="pl-c1">%s</span><span class="pl-pds">'</span></span> <span class="pl-k">%</span> (m5.curTick(), exit_event.getCause())</pre></div>
+                                    <p>Now gem5-NVP only supports AtomicSimpleCPU. If you wants to add support for other models, you can visit <a href="https://github.com/zlfben/gem5/wiki/Concepts-and-Structure">https://github.com/zlfben/gem5/wiki/Concepts-and-Structure</a> to get more information about the workflow of gem5-NVP and implement energy-aware behavior of the model you want. If you want to simulate of a system that contains external devices, you may want to check out the page <a href="https://github.com/zlfben/gem5/wiki/Virtual-Devices">https://github.com/zlfben/gem5/wiki/Virtual-Devices</a> for more information. The code mentioned above can be found at "configs/example/simple_engy.py"</p>
+                                    <h4>
+                                    <a id="user-content-simulation-via-sample-simulation-script" class="anchor" href="#simulation-via-sample-simulation-script" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Simulation via Sample Simulation Script</h4>
+                                    <p>Gem5-nvp provides an alternated script based on "./configs/example/se.py" to simulate energy-related systems, using System Call Emulation Mode in gem5. The path to the script is "./configs/example/se_engy.py". The script works just as simple_engy.py, but receives parameters to control the energy behaviors.</p>
+                                    <h6>
+                                    <a id="user-content-arguments-of-simulating-script" class="anchor" href="#arguments-of-simulating-script" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Arguments of Simulating Script</h6>
+                                    <table>
+                                    <thead>
+                                    <tr>
+                                    <th align="left">Argument</th>
+                                    <th align="left">Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                    <td align="left">--energy-prof={FILE}</td>
+                                    <td align="left">Locate the path to energy profile.</td>
+                                    </tr>
+                                    <tr>
+                                    <td align="left">--energy-time-unit={TIME_UNIT}</td>
+                                    <td align="left">Set time unit of energy profile. (Default '1us')</td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    <h4>
+                                    <a id="user-content-arguments-of-target-system-related-to-gem5-nvp" class="anchor" href="#arguments-of-target-system-related-to-gem5-nvp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Arguments of Target System Related to gem5-NVP</h4>
+                                    <p>A new debug flag is introduced in gem5-NVP. Users can type the following command to output the debug information of EnergyMgmt module:</p>
+                                    <div class="highlight highlight-source-shell"><pre>build/ARM/gem5.debug --debug-flags=EnergyMgmt [ simulation script ]</pre></div>
+                                    <table>
+                                    <thead>
+                                    <tr>
+                                    <th align="left">Argument</th>
+                                    <th align="left">Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                    <td align="left">--debug-flags={FLAGS}</td>
+                                    <td align="left">Decide what kinds of debug information to print. "EnergyMgmt" for energy behavior.</td>
+                                    </tr>
+                                    <tr>
+                                    <td align="left">--debug-file={FILE}</td>
+                                    <td align="left">Set the target file for debug output.</td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    <h4>
+                                    <a id="user-content-example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h4>
+                                    <p>The following examples will simulate systems running "./test/test-progs/hello/bin/arm/linux/hello".
+                                    To run exactly like gem5 (No energy behavior is simulated):</p>
+                                    <div class="highlight highlight-source-shell"><pre>build/ARM/gem5.debug configs/example/se_engy.py -c tests/test-progs/hello/bin/arm/linux/hello</pre></div>
+                                    <p>To simulate atomic cpu's energy behavior, using energy profile "./profile/energy_prof", with energy_time_unit = 1us, printing all the debug information of energy behavior into "./m5out/a.out":</p>
+                                    <div class="highlight highlight-source-shell"><pre>build/ARM/gem5.debug --debug-flags=EnergyMgmt --debug-file=a.out configs/example/se_engy.py -c tests/test-progs/hello/bin/arm/linux/hello --energy-profile=./profile/energy_prof --energy-time-unit=<span class="pl-s"><span class="pl-pds">'</span>1us<span class="pl-pds">'</span></span> </pre></div>
+                                    <p>To use the custom script:</p>
+                                    <div class="highlight highlight-source-shell"><pre>build/ARM/gem5.debug configs/example/simple_engy.py</pre></div>
+                                    <p>Gem5-NVP also supports more advanced functions which require developers to modify source code, like simulating systems with 2-threshold energy state machine. Tutorials and examples of such usage can be found at <a href="https://github.com/zlfben/gem5/wiki">https://github.com/zlfben/gem5/wiki</a>.</p>
+                                    <h1>
+                                    <a id="user-content-gem5-readme" class="anchor" href="#gem5-readme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>gem5 README</h1>
+                                    <p>This is the gem5 simulator.</p>
+                                    <p>The main website can be found at <a href="http://www.gem5.org">http://www.gem5.org</a></p>
+                                    <p>A good starting point is <a href="http://www.gem5.org/Introduction">http://www.gem5.org/Introduction</a>, and for
+                                    more information about building the simulator and getting started
+                                    please see <a href="http://www.gem5.org/Documentation">http://www.gem5.org/Documentation</a> and
+                                    <a href="http://www.gem5.org/Tutorials">http://www.gem5.org/Tutorials</a>.</p>
+                                    <p>To build gem5, you will need the following software: g++ or clang,
+                                    Python (gem5 links in the Python interpreter), SCons, SWIG, zlib, m4,
+                                    and lastly protobuf if you want trace capture and playback
+                                    support. Please see <a href="http://www.gem5.org/Dependencies">http://www.gem5.org/Dependencies</a> for more details
+                                    concerning the minimum versions of the aforementioned tools.</p>
+                                    <p>Once you have all dependencies resolved, type 'scons
+                                    build//gem5.opt' where ARCH is one of ALPHA, ARM, NULL, MIPS,
+                                    POWER, SPARC, or X86. This will build an optimized version of the gem5
+                                    binary (gem5.opt) for the the specified architecture. See
+                                    <a href="http://www.gem5.org/Build_System">http://www.gem5.org/Build_System</a> for more details and options.</p>
+                                    <p>With the simulator built, have a look at
+                                    <a href="http://www.gem5.org/Running_gem5">http://www.gem5.org/Running_gem5</a> for more information on how to use
+                                    gem5.</p>
+                                    <p>The basic source release includes these subdirectories:</p>
+                                    <ul>
+                                    <li>configs: example simulation configuration scripts</li>
+                                    <li>ext: less-common external packages needed to build gem5</li>
+                                    <li>src: source code of the gem5 simulator</li>
+                                    <li>system: source for some optional system software for simulated systems</li>
+                                    <li>tests: regression tests</li>
+                                    <li>util: useful utility programs and files</li>
+                                    </ul>
+                                    <p>To run full-system simulations, you will need compiled system firmware
+                                    (console and PALcode for Alpha), kernel binaries and one or more disk
+                                    images. Please see the gem5 download page for these items at
+                                    <a href="http://www.gem5.org/Download">http://www.gem5.org/Download</a></p>
+                                    <p>If you have questions, please send mail to <a href="mailto:gem5-users@gem5.org">gem5-users@gem5.org</a></p>
+                                    <p>Enjoy using gem5 and please share your modifications and extensions.</p>
+
+
+                                </div>
+                                <div id="downloads" class="tab-pane fade">
+                                    <div class="section">
+                                        <h2>Schematics</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <button href="#" class="btn-theme btn-theme-lg btn-color3-bg margin-r-20"><i class="fa fa-download margin-r-10"></i>Schematics in .PDF</button> 
+                                        <button href="#" class="btn-theme btn-theme-lg btn-color2-bg margin-r-20"><i class="fa fa-download margin-r-10"></i>PCB Project in .ZIP</button> 
+                                        
+                                    </div>
+                                    <div class="section">
+                                        <h2>THU-1010N Datasheet</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        
+                                        <button href="#" class="btn-theme btn-theme-lg btn-color1-bg margin-r-20"><i class="fa fa-download margin-r-10"></i>Datasheet in .pdf</button>
+                                    </div>
+                                    <div class="section">
+                                        <h2>Coding Examples</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        
+                                        <button href="#" class="btn-theme btn-theme-lg btn-color4-bg margin-r-20"><i class="fa fa-download margin-r-10"></i>Examples in .zip</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Simulator -->        
+
+        <!-- End Contact -->
+        <!--========== END PAGE LAYOUT ==========-->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <!-- Links -->
+            <div class="section-seperator">
+                <div class="content-md container">
+                    <div class="row">
+                        <div class="col-sm-2 sm-margin-b-30">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a href="#">Home</a></li>
+                                <li class="footer-list-item"><a href="#">About</a></li>
+                                <li class="footer-list-item"><a href="#">Work</a></li>
+                                <li class="footer-list-item"><a href="#">Contact</a></li>
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                        <div class="col-sm-2 sm-margin-b-30">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a href="#">Twitter</a></li>
+                                <li class="footer-list-item"><a href="#">Facebook</a></li>
+                                <li class="footer-list-item"><a href="#">Instagram</a></li>
+                                <li class="footer-list-item"><a href="#">YouTube</a></li>
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                        <div class="col-sm-3">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a href="#">Subscribe to Our Newsletter</a></li>
+                                <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
+                                <li class="footer-list-item"><a href="#">Terms &amp; Conditions</a></li>
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+            <!-- End Links -->
+
+            <!-- Copyright -->
+            <div class="content container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <img class="footer-logo" src="img/logo-dark.png" alt="Aitonepage Logo">
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p class="margin-b-0"><a class="fweight-700" href="http://keenthemes.com/preview/aitonepage/">Aitonepage</a> Theme Powered by: <a class="fweight-700" href="http://www.keenthemes.com/">KeenThemes.com</a></p>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+            <!-- End Copyright -->
+        </footer>
+        <!--========== END FOOTER ==========-->
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- CORE PLUGINS -->
+        <script src="vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- PAGE LEVEL PLUGINS -->
+        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+        <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script>
+
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="js/layout.js" type="text/javascript"></script>
+        <script src="js/components/wow.min.js" type="text/javascript"></script>
+        <script src="js/components/swiper.min.js" type="text/javascript"></script>
+        <script src="js/components/masonry.min.js" type="text/javascript"></script>
+        <script src="js/components/google-map.min.js" type="text/javascript"></script>
+
+    </body>
+    <!-- END BODY -->
+</html>
