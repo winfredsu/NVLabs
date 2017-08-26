@@ -7,33 +7,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_routing_module_1 = require("./app-routing.module");
-var affix_directive_1 = require("./affix.directive");
-var app_component_1 = require("./app.component");
+var router_1 = require("@angular/router");
 var home_component_1 = require("./home/home.component");
 var platform_component_1 = require("./platform/platform.component");
 var simulator_component_1 = require("./simulator/simulator.component");
-var AppModule = (function () {
-    function AppModule() {
+var routes = [
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'home', component: home_component_1.HomeComponent },
+    { path: 'platform', component: platform_component_1.PlatformComponent },
+    { path: 'simulator', component: simulator_component_1.SimulatorComponent }
+];
+var AppRoutingModule = (function () {
+    function AppRoutingModule() {
     }
-    AppModule = __decorate([
+    AppRoutingModule = __decorate([
         core_1.NgModule({
-            imports: [
-                platform_browser_1.BrowserModule,
-                app_routing_module_1.AppRoutingModule
-            ],
-            declarations: [
-                affix_directive_1.AffixDirective,
-                app_component_1.AppComponent,
-                home_component_1.HomeComponent,
-                platform_component_1.PlatformComponent,
-                simulator_component_1.SimulatorComponent
-            ],
-            bootstrap: [app_component_1.AppComponent]
+            imports: [router_1.RouterModule.forRoot(routes)],
+            exports: [router_1.RouterModule]
         })
-    ], AppModule);
-    return AppModule;
+    ], AppRoutingModule);
+    return AppRoutingModule;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.AppRoutingModule = AppRoutingModule;
+//# sourceMappingURL=app-routing.module.js.map

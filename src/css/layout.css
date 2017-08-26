@@ -1190,6 +1190,7 @@ fieldset[disabled] .btn-theme {
   	[Content]
 ------------------------------------------------------------------*/
 .content {
+	margin-top: 97px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -1801,15 +1802,3 @@ fieldset[disabled] .btn-theme {
 
 
 
-
-
-
-
-
-
-#carousel-home, #intro, #showcase, #platform {
-    display: none;
-}
-#simulator {
-    margin-top: 97px;
-}
