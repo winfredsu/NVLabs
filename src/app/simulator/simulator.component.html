@@ -1,8 +1,8 @@
-<div class="content container">
+<div class="content-sm container">
 		<div class="row">
 				<div class="col-lg-9 col-lg-offset-2">
 						<div class="product-title">
-								<h1 data-spy="affix" data-offset-top="40" data-smooth-scroll="true">Gem5-NVP Simulator</h1>
+								<h1 [affix]="60">Gem5-NVP Simulator</h1>
 						</div>
 						<div class="row product-intro margin-b-20 margin-t-30">
 								<div class="col-xs-8">
@@ -16,19 +16,19 @@
 								</div>
 						</div>
 						<div class="product-nav">
-								<div class="nav-wrapper" data-spy="affix" data-offset-top="267" data-smooth-scroll="true">
+								<div class="nav-wrapper" [affix]="287">
 										<ul class="nav nav-tabs">
-												<li class="active"><a data-toggle="tab" href="#simOverview">OVERVIEW</a></li>
-												<li><a data-toggle="tab" href="#simGettingStarted">GETTING STARTED</a></li>
-												<li><a data-toggle="tab" href="#simDownloads">DOCUMENTATION</a></li>
-												<li><a data-toggle="tab" href="#simDocumentation">EXAMPLES</a></li>
+												<li class="active"><a data-toggle="tab" href="#overview" [tabOnClickScroll]="287">OVERVIEW</a></li>
+												<li><a data-toggle="tab" href="#gettingStarted"  [tabOnClickScroll]="287">GETTING STARTED</a></li>
+												<li><a data-toggle="tab" href="#documentation" [tabOnClickScroll]="287">DOCUMENTATION</a></li>
+												<li><a data-toggle="tab" href="#examples" [tabOnClickScroll]="287">EXAMPLES</a></li>
 										</ul>
 										<div class="shadow"></div>
 								</div>
 						</div>
 						<div class="product-content">
 								<div class="tab-content">
-										<div id="simOverview" class="tab-pane fade in active">
+										<div id="overview" class="tab-pane fade in active">
 												<div class="section">
 														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
 												</div>
@@ -42,7 +42,7 @@
 														</ul>
 														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 														</p>
-														<figure class="figure margin-b-20">
+														<figure lass="figure margin-b-20">
 																<img src="img/970x647/02.jpg" class="img-responsive rounded" alt="This is a figure.">
 														</figure>
 														<p>
@@ -55,7 +55,7 @@
 														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
 												</div>
 										</div>
-										<div id="simGettingStarted" class="tab-pane fade">
+										<div id="gettingStarted" class="tab-pane fade">
 												<p>The gem5-NVP is a simulating framework for non-volatile processors (NVP) and non-volatile systems based on the gem5 simulator. It provides multiple interfaces for adding description of SimObjects' energy behavior as well as an energy management module which allows users to simulate state changes (power-on, power-off, etc.) easily.</p>
 <!--
 												<h2>

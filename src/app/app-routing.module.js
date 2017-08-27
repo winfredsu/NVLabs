@@ -11,11 +11,15 @@ var router_1 = require("@angular/router");
 var home_component_1 = require("./home/home.component");
 var platform_component_1 = require("./platform/platform.component");
 var simulator_component_1 = require("./simulator/simulator.component");
+var showcase_component_1 = require("./showcase/showcase.component");
+var breath_monitor_component_1 = require("./showcase/breath-monitor/breath-monitor.component");
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: home_component_1.HomeComponent },
     { path: 'platform', component: platform_component_1.PlatformComponent },
-    { path: 'simulator', component: simulator_component_1.SimulatorComponent }
+    { path: 'simulator', component: simulator_component_1.SimulatorComponent },
+    { path: 'showcase', component: showcase_component_1.ShowcaseComponent },
+    { path: 'showcase/breath-monitor', component: breath_monitor_component_1.BreathMonitorComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

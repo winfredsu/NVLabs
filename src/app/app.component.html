@@ -23,10 +23,10 @@
 						<div class="collapse navbar-collapse nav-collapse">
 								<div class="menu-container">
 										<ul class="nav navbar-nav navbar-nav-right">
-												<li class="nav-item"><a class="nav-item-child nav-item-hover" routerLink="/home">Home</a></li>
+												<li class="nav-item active"><a class="nav-item-child nav-item-hover" routerLink="/home">Home</a></li>
 												<li class="nav-item"><a class="nav-item-child nav-item-hover" routerLink="/platform">Platform</a></li>
 												<li class="nav-item"><a class="nav-item-child nav-item-hover" routerLink="/simulator" >Simulator</a></li>
-												<li class="nav-item"><a class="nav-item-child nav-item-hover" href="/home">Showcase</a></li>
+												<li class="nav-item"><a class="nav-item-child nav-item-hover" routerLink="/showcase">Showcase</a></li>
 												<li class="nav-item"><a class="nav-item-child nav-item-hover" routerLink="/" >Learn</a></li>
 												<li class="nav-item"><a class="nav-item-child nav-item-hover" routerLink="/" >About</a></li>
 										</ul> 
@@ -39,51 +39,55 @@
 </header>
 <!--========== END HEADER ==========-->
 
-<router-outlet></router-outlet>
+<div class="content">
+	<router-outlet></router-outlet>
+</div>
 
 <!--========== FOOTER ==========-->
 <footer class="footer">
 		<!-- Links -->
-		<div class="section-seperator">
-				<div class="content-md container">
-						<div class="row">
-								<div class="col-sm-2 sm-margin-b-30">
-										<!-- List -->
-										<ul class="list-unstyled footer-list">
-												<li class="footer-list-item"><a href="#">Home</a></li>
-												<li class="footer-list-item"><a href="#">About</a></li>
-												<li class="footer-list-item"><a href="#">Work</a></li>
-												<li class="footer-list-item"><a href="#">Contact</a></li>
-										</ul>
-										<!-- End List -->
-								</div>
-								<div class="col-sm-2 sm-margin-b-30">
-										<!-- List -->
-										<ul class="list-unstyled footer-list">
-												<li class="footer-list-item"><a href="#">Twitter</a></li>
-												<li class="footer-list-item"><a href="#">Facebook</a></li>
-												<li class="footer-list-item"><a href="#">Instagram</a></li>
-												<li class="footer-list-item"><a href="#">YouTube</a></li>
-										</ul>
-										<!-- End List -->
-								</div>
-								<div class="col-sm-3">
-										<!-- List -->
-										<ul class="list-unstyled footer-list">
-												<li class="footer-list-item"><a href="#">Subscribe to Our Newsletter</a></li>
-												<li class="footer-list-item"><a href="#">Privacy Policy</a></li>
-												<li class="footer-list-item"><a href="#">Terms &amp; Conditions</a></li>
-										</ul>
-										<!-- End List -->
+		<div class="section-seperator"></div>
+		<div class="content-xs container">
+				<div class="row">
+						<div class="col-sm-2 sm-margin-b-30">
+								<!-- List -->
+								<ul class="list-unstyled footer-list">
+										<li class="footer-list-item"><a href="#">Home</a></li>
+										<li class="footer-list-item"><a href="#">Platform</a></li>
+										<li class="footer-list-item"><a href="#">Simulator</a></li>
+								</ul>
+								<!-- End List -->
+						</div>
+						<div class="col-sm-2 sm-margin-b-30">
+								<!-- List -->
+								<ul class="list-unstyled footer-list">
+										<li class="footer-list-item"><a href="#">Showcase</a></li>
+										<li class="footer-list-item"><a href="#">Learning</a></li>
+										<li class="footer-list-item"><a href="#">About</a></li>
+								</ul>
+								<!-- End List -->
+						</div>
+						<div class="col-sm-3">
+								<!-- List -->
+								<ul class="list-unstyled footer-list">
+										<li class="footer-list-item"><a href="#">Privacy Policy</a></li>
+										<li class="footer-list-item"><a href="#">Terms &amp; Conditions</a></li>
+								</ul>
+								<!-- End List -->
+						</div>
+						<div class="col-sm-2 col-sm-offset-3">
+								<div class="margin-b-0 text-right">
+									<img class="footer-logo" src="img/logo-dark.png" alt="Aitonepage Logo">
 								</div>
 						</div>
-						<!--// end row -->
 				</div>
+				<!--// end row -->
 		</div>
 		<!-- End Links -->
 
-		<!-- Copyright -->
-		<div class="content container">
+		<div class="section-seperator"></div>
+
+<!-- 		<div class="content-xxs container">
 				<div class="row">
 						<div class="col-xs-6">
 								<img class="footer-logo" src="img/logo-dark.png" alt="Aitonepage Logo">
@@ -92,8 +96,7 @@
 								<p class="margin-b-0"><a class="fweight-700" href="http://keenthemes.com/preview/aitonepage/">Aitonepage</a> Theme Powered by: <a class="fweight-700" href="http://www.keenthemes.com/">KeenThemes.com</a></p>
 						</div>
 				</div>
-				<!--// end row -->
 		</div>
-		<!-- End Copyright -->
-</footer>
+ -->
+ </footer>
 

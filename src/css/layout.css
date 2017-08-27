@@ -573,7 +573,7 @@ fieldset[disabled] .btn-theme {
   	[Footer]
 ------------------------------------------------------------------*/
 .footer .footer-logo {
-  width: 100px;
+  width: 120px;
   height: auto;
 }
 
@@ -583,7 +583,7 @@ fieldset[disabled] .btn-theme {
 
 .footer .footer-list-item {
   color: #777984;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .footer .footer-list-item:last-child {
@@ -775,8 +775,8 @@ fieldset[disabled] .btn-theme {
 
 .header .nav-item-hover:after {
   position: absolute;
-  top: 45px;
-  left: 0;
+  top: 46px;
+  left: 5px;
   width: 9px;
   height: 2px;
   background: #13b1cd;
@@ -1189,10 +1189,22 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Content]
 ------------------------------------------------------------------*/
+.content-top {
+  margin-top: -97px;
+}
+
 .content {
 	margin-top: 97px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+}
+
+.content-xs {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.content-xxs {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .content-sm {
@@ -1206,8 +1218,8 @@ fieldset[disabled] .btn-theme {
 }
 
 .content-lg {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 110px;
+  padding-bottom: 130px;
 }
 
 /*------------------------------------------------------------------
@@ -1741,7 +1753,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .product-nav .nav-wrapper .shadow {
-    height: 25px;
+    height: 15px;
     width: 100%;
     background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 }
