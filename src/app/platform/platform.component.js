@@ -26,4 +26,56 @@ var PlatformComponent = (function () {
     return PlatformComponent;
 }());
 exports.PlatformComponent = PlatformComponent;
+var PlatformOverviewComponent = (function () {
+    function PlatformOverviewComponent() {
+    }
+    PlatformOverviewComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'nvlabs-platform-overview',
+            templateUrl: './platform-overview.component.html'
+        })
+    ], PlatformOverviewComponent);
+    return PlatformOverviewComponent;
+}());
+exports.PlatformOverviewComponent = PlatformOverviewComponent;
+var PlatformTechspecsComponent = (function () {
+    function PlatformTechspecsComponent() {
+    }
+    PlatformTechspecsComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'nvlabs-platform-techspecs',
+            templateUrl: './platform-techspecs.component.html'
+        })
+    ], PlatformTechspecsComponent);
+    return PlatformTechspecsComponent;
+}());
+exports.PlatformTechspecsComponent = PlatformTechspecsComponent;
+var PlatformGettingStartedComponent = (function () {
+    function PlatformGettingStartedComponent() {
+    }
+    PlatformGettingStartedComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'nvlabs-platform-getting-started',
+            templateUrl: './platform-getting-started.component.html'
+        })
+    ], PlatformGettingStartedComponent);
+    return PlatformGettingStartedComponent;
+}());
+exports.PlatformGettingStartedComponent = PlatformGettingStartedComponent;
+var PlatformDownloadsComponent = (function () {
+    function PlatformDownloadsComponent() {
+    }
+    PlatformDownloadsComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'nvlabs-platform-downloads',
+            templateUrl: './platform-downloads.component.html'
+        })
+    ], PlatformDownloadsComponent);
+    return PlatformDownloadsComponent;
+}());
+exports.PlatformDownloadsComponent = PlatformDownloadsComponent;
 //# sourceMappingURL=platform.component.js.map

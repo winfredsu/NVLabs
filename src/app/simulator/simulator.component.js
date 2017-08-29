@@ -26,4 +26,56 @@ var SimulatorComponent = (function () {
     return SimulatorComponent;
 }());
 exports.SimulatorComponent = SimulatorComponent;
+var SimulatorOverviewComponent = (function () {
+    function SimulatorOverviewComponent() {
+    }
+    SimulatorOverviewComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'nvlabs-simulator-overview',
+            templateUrl: './simulator-overview.component.html'
+        })
+    ], SimulatorOverviewComponent);
+    return SimulatorOverviewComponent;
+}());
+exports.SimulatorOverviewComponent = SimulatorOverviewComponent;
+var SimulatorGettingStartedComponent = (function () {
+    function SimulatorGettingStartedComponent() {
+    }
+    SimulatorGettingStartedComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'nvlabs-simulator-getting-started',
+            templateUrl: './simulator-getting-started.component.html'
+        })
+    ], SimulatorGettingStartedComponent);
+    return SimulatorGettingStartedComponent;
+}());
+exports.SimulatorGettingStartedComponent = SimulatorGettingStartedComponent;
+var SimulatorDocumentationComponent = (function () {
+    function SimulatorDocumentationComponent() {
+    }
+    SimulatorDocumentationComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'nvlabs-simulator-documentation',
+            templateUrl: './simulator-documentation.component.html'
+        })
+    ], SimulatorDocumentationComponent);
+    return SimulatorDocumentationComponent;
+}());
+exports.SimulatorDocumentationComponent = SimulatorDocumentationComponent;
+var SimulatorExamplesComponent = (function () {
+    function SimulatorExamplesComponent() {
+    }
+    SimulatorExamplesComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'nvlabs-simulator-examples',
+            templateUrl: './simulator-examples.component.html'
+        })
+    ], SimulatorExamplesComponent);
+    return SimulatorExamplesComponent;
+}());
+exports.SimulatorExamplesComponent = SimulatorExamplesComponent;
 //# sourceMappingURL=simulator.component.js.map

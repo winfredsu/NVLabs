@@ -10,23 +10,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
 var platform_browser_1 = require("@angular/platform-browser");
-var ShowcaseComponent = (function () {
-    function ShowcaseComponent(router, title) {
-        if (router.url === '/showcase') {
-            title.setTitle('Showcase | NVLabs');
-        }
+var AboutComponent = (function () {
+    function AboutComponent(title) {
+        title.setTitle('About | NVLabs');
     }
-    ShowcaseComponent = __decorate([
+    AboutComponent.prototype.ngOnInit = function () {
+        $("#sponsor-list").owlCarousel({
+            items: 4,
+            itemsDesktop: [1200, 4],
+            itemsDesktopSmall: [991, 3],
+            itemsTablet: [767, 3],
+            itemsTabletSmall: [625, 2],
+            itemsMobile: [479, 2]
+        });
+    };
+    AboutComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'nvlabs-showcase',
-            templateUrl: './showcase.component.html'
+            selector: 'nvlabs-about',
+            templateUrl: './about.component.html'
         }),
-        __metadata("design:paramtypes", [router_1.Router, platform_browser_1.Title])
-    ], ShowcaseComponent);
-    return ShowcaseComponent;
+        __metadata("design:paramtypes", [platform_browser_1.Title])
+    ], AboutComponent);
+    return AboutComponent;
 }());
-exports.ShowcaseComponent = ShowcaseComponent;
-//# sourceMappingURL=showcase.component.js.map
+exports.AboutComponent = AboutComponent;
+//# sourceMappingURL=about.component.js.map

@@ -19,7 +19,7 @@
 
 <!--========== PAGE LAYOUT ==========-->
 <!-- Intro -->
-<div id="intro">
+<div class="bg-color-sky-light">
 		<div class="content-lg container">
 				<div class="intro-title margin-b-60">
 						<p>WELCOME TO NVLABS</p>
@@ -29,19 +29,19 @@
 				<div class="row">
 						<div class="intro-item col-xs-12 col-sm-6 col-md-6">
 								<div class="margin-b-30">
-										<img class="intro-icon img-responsive wow fadeInUp" src="img/500x500/platform.png" alt="Development Platform" data-wow-duration=".3" data-wow-delay=".3s">
+									<img class="intro-icon img-responsive" src="img/500x500/platform.png" alt="Development Platform">
 								</div>
 								<h2 class="margin-b-5">NVPEval Platform</h2>
 								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
-								<a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">Explore</a>                    
+								<a routerLink="/platform" class="btn-theme btn-theme-xs btn-white-bg text-uppercase">Details</a>                    
 						</div>
 						<div class="intro-item col-xs-12 col-sm-6 col-md-6">
 								<div class="margin-b-30">
-										<img class="main-business-icon img-responsive wow fadeInUp" src="img/500x500/simulator.png" alt="NVPSim Simulator" data-wow-duration=".3" data-wow-delay=".3s">
+										<img class="main-business-icon img-responsive" src="img/500x500/simulator.png" alt="NVPSim Simulator">
 								</div>
 								<h2 class="margin-b-5">Gem5-NVP Simulator</h2>
 								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
-								<a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">Explore</a>
+								<a routerLink="/simulator" class="btn-theme btn-theme-xs btn-white-bg text-uppercase">Details</a>
 						</div>
 				</div>
 				<!-- End Masonry Grid -->
@@ -49,7 +49,10 @@
 </div>
 <!-- End Intro -->
 
-<div class="bg-color-sky-light">
+<div>
 	<nvlabs-showcase></nvlabs-showcase>
 </div>
 
+<div class="bg-color-sky-light">
+	<nvlabs-explore></nvlabs-explore>
+<div>

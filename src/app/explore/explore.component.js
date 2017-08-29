@@ -12,21 +12,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var platform_browser_1 = require("@angular/platform-browser");
-var ShowcaseComponent = (function () {
-    function ShowcaseComponent(router, title) {
-        if (router.url === '/showcase') {
-            title.setTitle('Showcase | NVLabs');
+var ExploreComponent = (function () {
+    function ExploreComponent(router, title) {
+        if (router.url === '/explore') {
+            title.setTitle('Explore | NVLabs');
         }
     }
-    ShowcaseComponent = __decorate([
+    ExploreComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'nvlabs-showcase',
-            templateUrl: './showcase.component.html'
+            selector: 'nvlabs-explore',
+            templateUrl: './explore.component.html'
         }),
         __metadata("design:paramtypes", [router_1.Router, platform_browser_1.Title])
-    ], ShowcaseComponent);
-    return ShowcaseComponent;
+    ], ExploreComponent);
+    return ExploreComponent;
 }());
-exports.ShowcaseComponent = ShowcaseComponent;
-//# sourceMappingURL=showcase.component.js.map
+exports.ExploreComponent = ExploreComponent;
+//# sourceMappingURL=explore.component.js.map
