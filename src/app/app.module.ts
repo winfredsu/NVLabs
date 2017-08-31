@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { AgmCoreModule } from '@agm/core';
 
 import { AffixDirective } from './affix.directive';
 
@@ -16,7 +17,10 @@ import { BreathMonitorComponent } from './showcase/breath-monitor/breath-monitor
 @NgModule({
 	imports: [
 		BrowserModule,
-		AppRoutingModule
+		AppRoutingModule,
+		AgmCoreModule.forRoot({
+			apiKey: 
+		})
 	],
 	declarations: [
 		AffixDirective,

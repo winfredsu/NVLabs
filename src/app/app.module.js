@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_routing_module_1 = require("./app-routing.module");
+var core_2 = require("@agm/core");
 var affix_directive_1 = require("./affix.directive");
 var app_component_1 = require("./app.component");
 var home_component_1 = require("./home/home.component");
@@ -25,7 +26,10 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [
                 platform_browser_1.BrowserModule,
-                app_routing_module_1.AppRoutingModule
+                app_routing_module_1.AppRoutingModule,
+                core_2.AgmCoreModule.forRoot({
+                    apiKey: 
+                })
             ],
             declarations: [
                 affix_directive_1.AffixDirective,

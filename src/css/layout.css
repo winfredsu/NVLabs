@@ -915,9 +915,14 @@ fieldset[disabled] .btn-theme {
   	[Contact]
 ------------------------------------------------------------------*/
 .contact-list > li {
-  font-size: 13px;
+  font-size: 18px;
   color: #81848f;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.contact-list .fa , .contact-list .fa-fake {
+	width: 20px;
+	text-align: center;
 }
 
 /*--------------------------------------------------
