@@ -13,8 +13,10 @@ var platform_component_1 = require("./platform/platform.component");
 var simulator_component_1 = require("./simulator/simulator.component");
 var showcase_component_1 = require("./showcase/showcase.component");
 var explore_component_1 = require("./explore/explore.component");
+var recommended_reading_component_1 = require("./explore/recommended-reading/recommended-reading.component");
 var about_component_1 = require("./about/about.component");
 var breath_monitor_component_1 = require("./showcase/breath-monitor/breath-monitor.component");
+var terms_component_1 = require("./terms/terms.component");
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: home_component_1.HomeComponent },
@@ -39,7 +41,9 @@ var routes = [
     { path: 'showcase', component: showcase_component_1.ShowcaseComponent },
     { path: 'showcase/breath-monitor', component: breath_monitor_component_1.BreathMonitorComponent },
     { path: 'explore', component: explore_component_1.ExploreComponent },
-    { path: 'about', component: about_component_1.AboutComponent }
+    { path: 'explore/recommended-reading', component: recommended_reading_component_1.RecommendedReadingComponent },
+    { path: 'about', component: about_component_1.AboutComponent },
+    { path: 'terms-and-conditions', component: terms_component_1.TermsComponent },
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

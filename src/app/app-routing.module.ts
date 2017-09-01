@@ -5,8 +5,10 @@ import { PlatformComponent, PlatformOverviewComponent, PlatformTechspecsComponen
 import { SimulatorComponent, SimulatorOverviewComponent, SimulatorGettingStartedComponent, SimulatorDocumentationComponent, SimulatorExamplesComponent } from './simulator/simulator.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { ExploreComponent } from './explore/explore.component';
+import { RecommendedReadingComponent } from './explore/recommended-reading/recommended-reading.component';
 import { AboutComponent } from './about/about.component';
 import { BreathMonitorComponent } from './showcase/breath-monitor/breath-monitor.component';
+import { TermsComponent } from './terms/terms.component';
 
 const routes: Routes = [
 	{ path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -32,7 +34,9 @@ const routes: Routes = [
 	{ path: 'showcase', component: ShowcaseComponent },
 	{ path: 'showcase/breath-monitor', component: BreathMonitorComponent },
 	{ path: 'explore', component: ExploreComponent },
-	{ path: 'about', component: AboutComponent }
+	{ path: 'explore/recommended-reading', component: RecommendedReadingComponent },
+	{ path: 'about', component: AboutComponent },
+	{ path: 'terms-and-conditions', component: TermsComponent },
 ];
 
 @NgModule({

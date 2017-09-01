@@ -13,6 +13,29 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var AboutComponent = (function () {
     function AboutComponent(title) {
+        this.lat = 40.005217;
+        this.lng = 116.336007;
+        this.zoom = 13;
+        this.styleArray = [{
+                featureType: "all",
+                stylers: [{
+                        saturation: -80
+                    }]
+            }, {
+                featureType: "road.arterial",
+                elementType: "geometry",
+                stylers: [{
+                        hue: "#00ffee"
+                    }, {
+                        saturation: 50
+                    }]
+            }, {
+                featureType: "poi.business",
+                elementType: "labels",
+                stylers: [{
+                        visibility: "off"
+                    }]
+            }];
         title.setTitle('About | NVLabs');
     }
     AboutComponent.prototype.ngOnInit = function () {

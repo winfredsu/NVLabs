@@ -11,15 +11,17 @@ import { PlatformComponent, PlatformOverviewComponent, PlatformTechspecsComponen
 import { SimulatorComponent, SimulatorOverviewComponent, SimulatorGettingStartedComponent, SimulatorDocumentationComponent, SimulatorExamplesComponent } from './simulator/simulator.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { ExploreComponent } from './explore/explore.component';
+import { RecommendedReadingComponent } from './explore/recommended-reading/recommended-reading.component';
 import { AboutComponent } from './about/about.component';
 import { BreathMonitorComponent } from './showcase/breath-monitor/breath-monitor.component';
+import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
 		AgmCoreModule.forRoot({
-			apiKey: 
+			apiKey: 'AIzaSyDFquj9AnLZG3zPXBPdovChfCxujtu2V8E' 
 		})
 	],
 	declarations: [
@@ -38,8 +40,10 @@ import { BreathMonitorComponent } from './showcase/breath-monitor/breath-monitor
 		SimulatorExamplesComponent,
 		ShowcaseComponent,
 		ExploreComponent,
+		RecommendedReadingComponent,
 		AboutComponent,
-		BreathMonitorComponent
+		BreathMonitorComponent,
+		TermsComponent,
 	],
 	bootstrap: [AppComponent]
 })

@@ -17,8 +17,10 @@ var platform_component_1 = require("./platform/platform.component");
 var simulator_component_1 = require("./simulator/simulator.component");
 var showcase_component_1 = require("./showcase/showcase.component");
 var explore_component_1 = require("./explore/explore.component");
+var recommended_reading_component_1 = require("./explore/recommended-reading/recommended-reading.component");
 var about_component_1 = require("./about/about.component");
 var breath_monitor_component_1 = require("./showcase/breath-monitor/breath-monitor.component");
+var terms_component_1 = require("./terms/terms.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,7 +30,7 @@ var AppModule = (function () {
                 platform_browser_1.BrowserModule,
                 app_routing_module_1.AppRoutingModule,
                 core_2.AgmCoreModule.forRoot({
-                    apiKey: 
+                    apiKey: 'AIzaSyDFquj9AnLZG3zPXBPdovChfCxujtu2V8E'
                 })
             ],
             declarations: [
@@ -47,8 +49,10 @@ var AppModule = (function () {
                 simulator_component_1.SimulatorExamplesComponent,
                 showcase_component_1.ShowcaseComponent,
                 explore_component_1.ExploreComponent,
+                recommended_reading_component_1.RecommendedReadingComponent,
                 about_component_1.AboutComponent,
-                breath_monitor_component_1.BreathMonitorComponent
+                breath_monitor_component_1.BreathMonitorComponent,
+                terms_component_1.TermsComponent,
             ],
             bootstrap: [app_component_1.AppComponent]
         })

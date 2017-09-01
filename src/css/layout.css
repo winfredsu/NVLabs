@@ -1831,20 +1831,43 @@ fieldset[disabled] .btn-theme {
     color: #81848f;
 }
 
-
-
 .explore-item img {
 	width: 160px;
 	height: 160px;
 	display: inline-block;
 }
 
-.normal-content p {
+agm-map {
+	height: 300px;
+}
+
+/*------------------------------------------------------------------
+  	[plain-content]
+------------------------------------------------------------------*/
+.plain-content p {
     font-size: 18px;
     font-weight: 400;
 		color: #81848f;
 }
 
-.normal-content h1 {
-	margin-top: 35px;
+.plain-content h1 {
+	/*margin-top: 35px;*/
+}
+
+.plain-content a {
+    color: #13b1cd;
+}
+
+.plain-content .well {
+	font-size: 16px;
+	color: #515769;
+}
+
+.plain-content .well em {
+	font-size: 16px;
+	color: #515769;
+}
+
+.plain-content em {
+	font-size: 18px;
 }
