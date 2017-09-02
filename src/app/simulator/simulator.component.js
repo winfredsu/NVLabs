@@ -11,10 +11,58 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var SimulatorComponent = (function () {
+var SimulatorComponent = /** @class */ (function () {
     function SimulatorComponent(title) {
         title.setTitle('Simulator | NVLabs');
     }
+    SimulatorComponent.prototype.ngOnInit = function () {
+        this.titleAffix = 60;
+        this.calcNavAffix();
+        this.calcTitleMinHeight();
+        this.calcNavMinHeight();
+        this.calcNavWidth();
+    };
+    SimulatorComponent.prototype.onResize = function () {
+        this.calcNavAffix();
+        this.calcTitleMinHeight();
+        this.calcNavMinHeight();
+        this.calcNavWidth();
+    };
+    SimulatorComponent.prototype.calcNavAffix = function () {
+        this.navAffix = this.elTitle.nativeElement.offsetHeight
+            + this.elIntro.nativeElement.offsetHeight + 54;
+    };
+    SimulatorComponent.prototype.calcTitleMinHeight = function () {
+        this.titleMinHeight = this.elTitle.nativeElement.offsetHeight + 20;
+    };
+    SimulatorComponent.prototype.calcNavMinHeight = function () {
+        this.navMinHeight = this.elNav.nativeElement.offsetHeight;
+    };
+    SimulatorComponent.prototype.calcNavWidth = function () {
+        this.navWidth = this.elTitleWrapper.nativeElement.offsetWidth;
+    };
+    __decorate([
+        core_1.ViewChild('title'),
+        __metadata("design:type", core_1.ElementRef)
+    ], SimulatorComponent.prototype, "elTitle", void 0);
+    __decorate([
+        core_1.ViewChild('intro'),
+        __metadata("design:type", core_1.ElementRef)
+    ], SimulatorComponent.prototype, "elIntro", void 0);
+    __decorate([
+        core_1.ViewChild('nav'),
+        __metadata("design:type", core_1.ElementRef)
+    ], SimulatorComponent.prototype, "elNav", void 0);
+    __decorate([
+        core_1.ViewChild('titleWrapper'),
+        __metadata("design:type", core_1.ElementRef)
+    ], SimulatorComponent.prototype, "elTitleWrapper", void 0);
+    __decorate([
+        core_1.HostListener('window:resize', []),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], SimulatorComponent.prototype, "onResize", null);
     SimulatorComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
@@ -26,7 +74,7 @@ var SimulatorComponent = (function () {
     return SimulatorComponent;
 }());
 exports.SimulatorComponent = SimulatorComponent;
-var SimulatorOverviewComponent = (function () {
+var SimulatorOverviewComponent = /** @class */ (function () {
     function SimulatorOverviewComponent() {
     }
     SimulatorOverviewComponent = __decorate([
@@ -39,7 +87,7 @@ var SimulatorOverviewComponent = (function () {
     return SimulatorOverviewComponent;
 }());
 exports.SimulatorOverviewComponent = SimulatorOverviewComponent;
-var SimulatorGettingStartedComponent = (function () {
+var SimulatorGettingStartedComponent = /** @class */ (function () {
     function SimulatorGettingStartedComponent() {
     }
     SimulatorGettingStartedComponent = __decorate([
@@ -52,7 +100,7 @@ var SimulatorGettingStartedComponent = (function () {
     return SimulatorGettingStartedComponent;
 }());
 exports.SimulatorGettingStartedComponent = SimulatorGettingStartedComponent;
-var SimulatorDocumentationComponent = (function () {
+var SimulatorDocumentationComponent = /** @class */ (function () {
     function SimulatorDocumentationComponent() {
     }
     SimulatorDocumentationComponent = __decorate([
@@ -65,7 +113,7 @@ var SimulatorDocumentationComponent = (function () {
     return SimulatorDocumentationComponent;
 }());
 exports.SimulatorDocumentationComponent = SimulatorDocumentationComponent;
-var SimulatorExamplesComponent = (function () {
+var SimulatorExamplesComponent = /** @class */ (function () {
     function SimulatorExamplesComponent() {
     }
     SimulatorExamplesComponent = __decorate([

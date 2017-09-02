@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var PlatformComponent = (function () {
+var PlatformComponent = /** @class */ (function () {
     function PlatformComponent(title) {
         title.setTitle('Platform | NVLabs');
     }
@@ -26,7 +26,7 @@ var PlatformComponent = (function () {
     return PlatformComponent;
 }());
 exports.PlatformComponent = PlatformComponent;
-var PlatformOverviewComponent = (function () {
+var PlatformOverviewComponent = /** @class */ (function () {
     function PlatformOverviewComponent() {
     }
     PlatformOverviewComponent = __decorate([
@@ -39,7 +39,7 @@ var PlatformOverviewComponent = (function () {
     return PlatformOverviewComponent;
 }());
 exports.PlatformOverviewComponent = PlatformOverviewComponent;
-var PlatformTechspecsComponent = (function () {
+var PlatformTechspecsComponent = /** @class */ (function () {
     function PlatformTechspecsComponent() {
     }
     PlatformTechspecsComponent = __decorate([
@@ -52,7 +52,7 @@ var PlatformTechspecsComponent = (function () {
     return PlatformTechspecsComponent;
 }());
 exports.PlatformTechspecsComponent = PlatformTechspecsComponent;
-var PlatformGettingStartedComponent = (function () {
+var PlatformGettingStartedComponent = /** @class */ (function () {
     function PlatformGettingStartedComponent() {
     }
     PlatformGettingStartedComponent = __decorate([
@@ -65,7 +65,7 @@ var PlatformGettingStartedComponent = (function () {
     return PlatformGettingStartedComponent;
 }());
 exports.PlatformGettingStartedComponent = PlatformGettingStartedComponent;
-var PlatformDownloadsComponent = (function () {
+var PlatformDownloadsComponent = /** @class */ (function () {
     function PlatformDownloadsComponent() {
     }
     PlatformDownloadsComponent = __decorate([

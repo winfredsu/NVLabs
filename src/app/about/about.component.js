@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var AboutComponent = (function () {
+var AboutComponent = /** @class */ (function () {
     function AboutComponent(title) {
         this.lat = 40.005217;
         this.lng = 116.336007;
@@ -40,7 +40,6 @@ var AboutComponent = (function () {
     }
     AboutComponent.prototype.ngOnInit = function () {
         $("#sponsor-list").owlCarousel({
-            items: 4,
             itemsDesktop: [1200, 4],
             itemsDesktopSmall: [991, 3],
             itemsTablet: [767, 3],

@@ -37,7 +37,6 @@ export class AboutComponent implements OnInit {
 
 	ngOnInit(): void {
 		$("#sponsor-list").owlCarousel({
-			items: 4,
 			itemsDesktop: [1200,4],
 			itemsDesktopSmall: [991,3],
 			itemsTablet: [767,3],

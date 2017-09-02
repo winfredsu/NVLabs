@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var TermsComponent = (function () {
+var TermsComponent = /** @class */ (function () {
     function TermsComponent(title) {
         title.setTitle('Terms & Conditions | NVLabs');
     }

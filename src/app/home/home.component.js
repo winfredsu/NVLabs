@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("../app.component");
-var HomeComponent = (function () {
+var HomeComponent = /** @class */ (function () {
     function HomeComponent(document, appComponent, title) {
         this.document = document;
         this.appComponent = appComponent;
@@ -33,8 +33,12 @@ var HomeComponent = (function () {
             this.appComponent.removeClass('page-on-scroll');
         }
     };
+    HomeComponent.prototype.onResize = function (event) {
+        this.height = event.target.innerHeight;
+    };
     HomeComponent.prototype.ngOnInit = function () {
         this.appComponent.removeClass('page-on-scroll');
+        this.height = window.innerHeight;
     };
     HomeComponent.prototype.ngOnDestroy = function () {
         this.appComponent.addClass('page-on-scroll');
@@ -45,6 +49,12 @@ var HomeComponent = (function () {
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], HomeComponent.prototype, "onWindowScroll", null);
+    __decorate([
+        core_1.HostListener('window:resize', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Object]),
+        __metadata("design:returntype", void 0)
+    ], HomeComponent.prototype, "onResize", null);
     HomeComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

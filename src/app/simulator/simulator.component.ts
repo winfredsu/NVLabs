@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -6,9 +6,51 @@ import { Title } from '@angular/platform-browser';
 	selector: 'nvlabs-simulator',
 	templateUrl: './simulator.component.html'
 })
-export class SimulatorComponent {
+export class SimulatorComponent implements OnInit{
+	titleAffix: number;
+	navAffix: number;
+	titleMinHeight: number;
+	navMinHeight: number;
+	navWidth: number;
+	@ViewChild('title') elTitle: ElementRef;
+	@ViewChild('intro') elIntro: ElementRef;
+	@ViewChild('nav') elNav: ElementRef;
+	@ViewChild('titleWrapper') elTitleWrapper: ElementRef;
 	constructor(title: Title) {
 		title.setTitle('Simulator | NVLabs');
+	}
+
+	ngOnInit() {
+		this.titleAffix = 60;
+		this.calcNavAffix();
+		this.calcTitleMinHeight();
+		this.calcNavMinHeight();
+		this.calcNavWidth();
+	}
+
+	@HostListener('window:resize', []) 
+	onResize() {
+		this.calcNavAffix();
+		this.calcTitleMinHeight();
+		this.calcNavMinHeight();
+		this.calcNavWidth();
+	}
+	
+	private calcNavAffix() {
+		this.navAffix = this.elTitle.nativeElement.offsetHeight
+			+this.elIntro.nativeElement.offsetHeight+54;
+	}
+
+	private calcTitleMinHeight() {
+		this.titleMinHeight = this.elTitle.nativeElement.offsetHeight+20;
+	}
+
+	private calcNavMinHeight() {
+		this.navMinHeight = this.elNav.nativeElement.offsetHeight;
+	}
+
+	private calcNavWidth() {
+		this.navWidth = this.elTitleWrapper.nativeElement.offsetWidth;
 	}
 }
 

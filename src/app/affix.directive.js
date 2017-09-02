@@ -14,7 +14,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var AffixDirective = (function () {
+var AffixDirective = /** @class */ (function () {
     function AffixDirective(document, el) {
         this.document = document;
         this.el = el;

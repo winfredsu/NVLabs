@@ -12,4 +12,5 @@ export class ExploreComponent {
 		if(router.url === '/explore') {
 			title.setTitle('Explore | NVLabs');
 		}
+	}
 }

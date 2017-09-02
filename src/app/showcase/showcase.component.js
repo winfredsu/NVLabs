@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var platform_browser_1 = require("@angular/platform-browser");
-var ShowcaseComponent = (function () {
+var ShowcaseComponent = /** @class */ (function () {
     function ShowcaseComponent(router, title) {
         if (router.url === '/showcase') {
             title.setTitle('Showcase | NVLabs');

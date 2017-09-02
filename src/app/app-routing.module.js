@@ -45,7 +45,7 @@ var routes = [
     { path: 'about', component: about_component_1.AboutComponent },
     { path: 'terms-and-conditions', component: terms_component_1.TermsComponent },
 ];
-var AppRoutingModule = (function () {
+var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
     AppRoutingModule = __decorate([

@@ -21,7 +21,7 @@ var recommended_reading_component_1 = require("./explore/recommended-reading/rec
 var about_component_1 = require("./about/about.component");
 var breath_monitor_component_1 = require("./showcase/breath-monitor/breath-monitor.component");
 var terms_component_1 = require("./terms/terms.component");
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([

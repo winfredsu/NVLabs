@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var platform_browser_1 = require("@angular/platform-browser");
-var ExploreComponent = (function () {
+var ExploreComponent = /** @class */ (function () {
     function ExploreComponent(router, title) {
         if (router.url === '/explore') {
             title.setTitle('Explore | NVLabs');

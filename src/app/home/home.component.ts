@@ -9,6 +9,7 @@ import { AppComponent } from '../app.component';
 	// styleUrls: ['./app.component.css']	
 })
 export class HomeComponent implements OnInit, OnDestroy {
+	height: number;
 	constructor(
 		@Inject(DOCUMENT) private document: Document,
 		@Input('AppComponent') private appComponent: AppComponent, 
@@ -27,8 +28,14 @@ export class HomeComponent implements OnInit, OnDestroy {
 		}
 	}
 
+	@HostListener('window:resize', ['$event'])
+	onResize(event) {
+	  this.height = event.target.innerHeight; 
+	}
+
 	ngOnInit() {
 		this.appComponent.removeClass('page-on-scroll');
+		this.height = window.innerHeight;
 	}
 
 	ngOnDestroy() {

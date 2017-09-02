@@ -1,22 +1,23 @@
 <div class="content-sm container">
 		<div class="row">
 				<div class="col-lg-9 col-lg-offset-2">
-						<div class="product-title">
-								<h1 [affix]="60">Gem5-NVP Simulator</h1>
+						<div #titleWrapper class="product-title" [style.min-height.px]="titleMinHeight">
+								<h1 #title [affix]="titleAffix">Gem5-NVP Simulator</h1>
 						</div>
-						<div class="row product-intro margin-b-20 margin-t-30">
-								<div class="col-xs-8">
+						<div #intro class="row product-intro margin-b-20 margin-t-30">
+								<div class="col-sm-8">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
 								</div>
-								<div class="col-xs-4">
+								<div class="col-sm-4">
 										<div class="margin-t-5">
 												<button routerLink="/simulator/getting-started" class="btn-theme btn-color1-bg btn-block text-uppercase">Get Started</button>
 												<button href="#" class="btn-theme btn-white-bg btn-block text-uppercase">Learn More</button>
 										</div> 
 								</div>
 						</div>
-						<div class="product-nav">
-								<div class="nav-wrapper" [affix]="287">
+						<div class="product-nav" [style.min-height.px]="navMinHeight">
+								<!-- <div class="nav-wrapper" [affix]="287"> -->
+								<div #nav class="nav-wrapper" [affix]="navAffix" [style.width.px]="navWidth">
 										<ul class="nav nav-tabs">
 												<li routerLinkActive="active"><a routerLink="/simulator/overview">OVERVIEW</a></li>
 												<li routerLinkActive="active"><a routerLink="/simulator/getting-started">GETTING STARTED</a></li>

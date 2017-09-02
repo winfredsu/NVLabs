@@ -339,7 +339,7 @@ fieldset[disabled] .btn-theme {
 .btn-theme-xs {
   font-size: 13px;
   font-weight: 600;
-  padding: 10px 45px;
+  padding: 10px 50px;
 }
 
 .btn-theme-lg {
@@ -1054,11 +1054,10 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
     [Carousel]
 ------------------------------------------------------------------*/
-.carousel-indicators {
-  left: auto;
-  width: auto;
-  padding-left: 0;
-  margin-left: 0;
+
+.carousel-home {
+  position: relative;
+  background-image: url('../img/1920x1080/01.jpg');
 }
 
 .carousel-centered {
@@ -1092,9 +1091,15 @@ fieldset[disabled] .btn-theme {
 		padding-bottom: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .carousel-title {
     font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-title {
+    font-size: 54px;
   }
 }
 
@@ -1632,6 +1637,10 @@ fieldset[disabled] .btn-theme {
 }
 
 
+/*--------------------------------------------------
+    [Intro]
+----------------------------------------------------*/
+
 .intro-item {
     text-align: center;
     padding-left: 60px;
@@ -1652,6 +1661,24 @@ fieldset[disabled] .btn-theme {
     color: #13b1cd;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+@media( max-width: 992px ) {
+  .intro-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media( max-width: 768px ) {
+  .intro-item {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 50px;
+  }
+  .intro-title h1 {
+    font-size: 32px;
+  }
 }
 
 .showcase-title {
@@ -1715,11 +1742,14 @@ fieldset[disabled] .btn-theme {
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
+/* ---------------------------------------
+    [Main product page style]
+    -------------------------------------*/
 
-.product-title {
+/*.product-title {
     min-height: 76px;
 }
-
+*/
 .product-title h1 { 
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1759,7 +1789,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .product-nav {
-    min-height: 69px;
+    /*min-height: 69px;*/
 }
 
 .product-nav .nav-wrapper {
@@ -1783,8 +1813,8 @@ fieldset[disabled] .btn-theme {
 }
 
 .product-nav .nav-tabs > li a {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: s0px;
 }
 
 .product-nav .nav-tabs > li.active a {
@@ -1832,8 +1862,8 @@ fieldset[disabled] .btn-theme {
 }
 
 .explore-item img {
-	width: 160px;
-	height: 160px;
+	width: 50%;
+  max-width: 250px;
 	display: inline-block;
 }
 
