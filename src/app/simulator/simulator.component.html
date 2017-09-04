@@ -2,7 +2,7 @@
 		<div class="row">
 				<div class="col-lg-9 col-lg-offset-2">
 						<div #titleWrapper class="product-title" [style.min-height.px]="titleMinHeight">
-								<h1 #title [affix]="titleAffix">Gem5-NVP Simulator</h1>
+							<h1 #title [affix]="titleAffix" affixTop="97">Gem5-NVP Simulator</h1>
 						</div>
 						<div #intro class="row product-intro margin-b-20 margin-t-30">
 								<div class="col-sm-8">
@@ -17,7 +17,7 @@
 						</div>
 						<div class="product-nav" [style.min-height.px]="navMinHeight">
 								<!-- <div class="nav-wrapper" [affix]="287"> -->
-								<div #nav class="nav-wrapper" [affix]="navAffix" [style.width.px]="navWidth">
+								<div #nav class="nav-wrapper" [affix]="navAffix" affixTop="{{navTop}}" [style.width.px]="navWidth">
 										<ul class="nav nav-tabs">
 												<li routerLinkActive="active"><a routerLink="/simulator/overview">OVERVIEW</a></li>
 												<li routerLinkActive="active"><a routerLink="/simulator/getting-started">GETTING STARTED</a></li>

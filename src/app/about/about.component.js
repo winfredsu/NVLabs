@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,9 +7,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
+import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 var AboutComponent = /** @class */ (function () {
     function AboutComponent(title) {
         this.lat = 40.005217;
@@ -40,22 +38,32 @@ var AboutComponent = /** @class */ (function () {
     }
     AboutComponent.prototype.ngOnInit = function () {
         $("#sponsor-list").owlCarousel({
-            itemsDesktop: [1200, 4],
-            itemsDesktopSmall: [991, 3],
-            itemsTablet: [767, 3],
-            itemsTabletSmall: [625, 2],
-            itemsMobile: [479, 2]
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            //autoWidth: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                1200: {
+                    items: 4
+                }
+            }
         });
     };
     AboutComponent = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvlabs-about',
             templateUrl: './about.component.html'
         }),
-        __metadata("design:paramtypes", [platform_browser_1.Title])
+        __metadata("design:paramtypes", [Title])
     ], AboutComponent);
     return AboutComponent;
 }());
-exports.AboutComponent = AboutComponent;
+export { AboutComponent };
 //# sourceMappingURL=about.component.js.map

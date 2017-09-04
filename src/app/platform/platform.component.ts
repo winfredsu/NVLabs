@@ -1,14 +1,74 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+declare var $: any;
 
 @Component({
 	moduleId: module.id,
 	selector: 'nvlabs-platform',
 	templateUrl: './platform.component.html'
 })
-export class PlatformComponent {
+export class PlatformComponent implements OnInit {
+	navAffix: number;
+	titleMinHeight: number;
+	navMinHeight: number;
+	navWidth: number;
+	navTop: number;
+
+	@ViewChild('title') elTitle: ElementRef;
+	@ViewChild('intro') elIntro: ElementRef;
+	@ViewChild('nav') elNav: ElementRef;
+	@ViewChild('titleWrapper') elTitleWrapper: ElementRef;
 	constructor(title: Title) {
 		title.setTitle('Platform | NVLabs');
+	}
+
+	ngOnInit(): void {
+		$('#carouselPlatform').owlCarousel({
+			items: 1,
+			autoplay: true,
+			dots: false,
+			loop: true,
+			autoplayHoverPause: true,
+			autoplayTimeout: 7500,
+			autoplaySpeed: 500,
+			URLhashListener: true,
+			startPosition: 'URLHash'
+		});
+
+		this.calcNavAffix();
+		this.calcTitleMinHeight();
+		this.calcNavMinHeight();
+		this.calcNavWidth();
+	}
+
+	goToSlide(id: number) {
+		$('#carouselPlatform').trigger("to.owl.carousel", [id, 500, true]);
+	}
+
+	@HostListener('window:resize', []) 
+	onResize() {
+		this.calcNavAffix();
+		this.calcTitleMinHeight();
+		this.calcNavMinHeight();
+		this.calcNavWidth();
+	}
+	
+	private calcNavAffix() {
+		this.navAffix = this.elIntro.nativeElement.offsetHeight+145;
+
+		this.navTop = this.elTitle.nativeElement.offsetHeight+97;
+	}
+
+	private calcTitleMinHeight() {
+		this.titleMinHeight = this.elTitle.nativeElement.offsetHeight+20;
+	}
+
+	private calcNavMinHeight() {
+		this.navMinHeight = this.elNav.nativeElement.offsetHeight;
+	}
+
+	private calcNavWidth() {
+		this.navWidth = this.elTitleWrapper.nativeElement.offsetWidth;
 	}
 }
 

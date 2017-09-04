@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+declare var $: any;
 
 @Component({
 	moduleId: module.id,
@@ -37,11 +38,21 @@ export class AboutComponent implements OnInit {
 
 	ngOnInit(): void {
 		$("#sponsor-list").owlCarousel({
-			itemsDesktop: [1200,4],
-			itemsDesktopSmall: [991,3],
-			itemsTablet: [767,3],
-			itemsTabletSmall: [625,2],
-			itemsMobile: [479,2]
+			loop: true,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			//autoWidth: true,
+			responsive: {
+				0: { 
+					items: 2
+				},
+				768: {
+					items: 3
+				},
+				1200: {
+					items: 4
+				}
+			}
 		});
 	}
 }

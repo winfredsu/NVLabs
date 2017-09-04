@@ -12,6 +12,7 @@ export class SimulatorComponent implements OnInit{
 	titleMinHeight: number;
 	navMinHeight: number;
 	navWidth: number;
+	navTop: number;
 	@ViewChild('title') elTitle: ElementRef;
 	@ViewChild('intro') elIntro: ElementRef;
 	@ViewChild('nav') elNav: ElementRef;
@@ -37,8 +38,9 @@ export class SimulatorComponent implements OnInit{
 	}
 	
 	private calcNavAffix() {
-		this.navAffix = this.elTitle.nativeElement.offsetHeight
-			+this.elIntro.nativeElement.offsetHeight+54;
+		this.navAffix = this.elIntro.nativeElement.offsetHeight + 130;
+
+		this.navTop = this.elTitle.nativeElement.offsetHeight + 97;
 	}
 
 	private calcTitleMinHeight() {

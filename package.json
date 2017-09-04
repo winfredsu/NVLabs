@@ -7,7 +7,10 @@
     "build": "tsc -p src/",
     "build:watch": "tsc -p src/ -w",
     "serve": "lite-server -c=bs-config.json",
-    "start": "concurrently \"npm run build:watch\" \"npm run serve\""
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
+		"build:aot": "ngc -p tsconfig-aot.json && rollup -c rollup-config.js",
+    "serve:aot": "lite-server -c=bs-config.aot.json",
+    "start:aot": "concurrently \"npm run build:aot\" \"npm run serve:aot\""
   },
   "repository": {
     "type": "git",
@@ -17,26 +20,35 @@
   "license": "ISC",
   "dependencies": {
     "@agm/core": "^1.0.0-beta.1",
+    "@angular/animations": "^4.3.5",
     "@angular/common": "^4.3.5",
     "@angular/compiler": "^4.3.5",
+    "@angular/compiler-cli": "^4.3.6",
     "@angular/core": "^4.3.5",
     "@angular/platform-browser": "^4.3.5",
     "@angular/platform-browser-dynamic": "^4.3.5",
+    "@angular/platform-server": "^4.3.6",
     "@angular/router": "^4.3.5",
+    "@types/node": "^8.0.26",
     "bootstrap": "^3.3.7",
-    "core-js": "^2.5.0",
+    "core-js": "^2.5.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "jquery-migrate": "^3.0.0",
     "owl.carousel": "^2.2.0",
     "rxjs": "^5.4.3",
     "systemjs": "^0.20.18",
+    "typescript": "^2.5.2",
     "zone.js": "^0.8.16"
   },
   "devDependencies": {
     "@types/node": "^8.0.24",
     "concurrently": "^3.5.0",
     "lite-server": "^2.3.0",
+    "rollup": "^0.49.2",
+    "rollup-plugin-commonjs": "^8.2.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
     "typescript": "^2.4.2"
   }
 }

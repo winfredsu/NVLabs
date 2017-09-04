@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,10 +7,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var platform_browser_1 = require("@angular/platform-browser");
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 var ShowcaseComponent = /** @class */ (function () {
     function ShowcaseComponent(router, title) {
         if (router.url === '/showcase') {
@@ -19,14 +17,14 @@ var ShowcaseComponent = /** @class */ (function () {
         }
     }
     ShowcaseComponent = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvlabs-showcase',
             templateUrl: './showcase.component.html'
         }),
-        __metadata("design:paramtypes", [router_1.Router, platform_browser_1.Title])
+        __metadata("design:paramtypes", [Router, Title])
     ], ShowcaseComponent);
     return ShowcaseComponent;
 }());
-exports.ShowcaseComponent = ShowcaseComponent;
+export { ShowcaseComponent };
 //# sourceMappingURL=showcase.component.js.map

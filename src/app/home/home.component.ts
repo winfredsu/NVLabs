@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 		private title: Title) {
 		title.setTitle('NVLabs');
 	}
+
 	@HostListener('window:scroll', [])
 	onWindowScroll() {
 		if (this.document.body.scrollTop > 60) {
@@ -29,7 +30,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 	}
 
 	@HostListener('window:resize', ['$event'])
-	onResize(event) {
+	onResize(event: any) {
 	  this.height = event.target.innerHeight; 
 	}
 

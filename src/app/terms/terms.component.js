@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,22 +7,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
+import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 var TermsComponent = /** @class */ (function () {
     function TermsComponent(title) {
         title.setTitle('Terms & Conditions | NVLabs');
     }
     TermsComponent = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvlabs-terms-and-conditions',
             templateUrl: './terms.component.html'
         }),
-        __metadata("design:paramtypes", [platform_browser_1.Title])
+        __metadata("design:paramtypes", [Title])
     ], TermsComponent);
     return TermsComponent;
 }());
-exports.TermsComponent = TermsComponent;
+export { TermsComponent };
 //# sourceMappingURL=terms.component.js.map
