@@ -1941,6 +1941,20 @@ agm-map {
 	font-size: 18px;
 }
 
+.plain-content .figure {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.plain-content .caption {
+	font-style: italic;
+	color: #515769;
+	font-size: 16px;
+	margin-top: 5px;
+}
 /*.plain-content span {*/
 	/*font-size: 18px;*/
 	/*font-weight: 400;*/

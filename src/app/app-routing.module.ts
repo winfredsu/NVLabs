@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { PlatformComponent, PlatformOverviewComponent, PlatformTechspecsComponent, PlatformGettingStartedComponent, PlatformDownloadsComponent } from './platform/platform.component';
 import { SimulatorComponent, SimulatorOverviewComponent, SimulatorGettingStartedComponent, SimulatorDocumentationComponent, SimulatorExamplesComponent } from './simulator/simulator.component';
 import { ShowcaseComponent, SelfPoweredWearablesComponent, TransientComputingComponent, LowPowerIoTComponent } from './showcase/showcase.component';
-import { ExploreComponent, RecommendedReadingComponent } from './explore/explore.component';
+import { ExploreComponent, RecommendedReadingComponent, NVPFundamentalsComponent } from './explore/explore.component';
 import { AboutComponent } from './about/about.component';
 import { TermsComponent } from './terms/terms.component';
 
@@ -35,6 +35,7 @@ const routes: Routes = [
 	{ path: 'showcase/low-power-iot', component: LowPowerIoTComponent },
 	{ path: 'explore', component: ExploreComponent },
 	{ path: 'explore/recommended-reading', component: RecommendedReadingComponent },
+	{ path: 'explore/nvp-fundamentals', component: NVPFundamentalsComponent },
 	{ path: 'about', component: AboutComponent },
 	{ path: 'terms-and-conditions', component: TermsComponent },
 ];

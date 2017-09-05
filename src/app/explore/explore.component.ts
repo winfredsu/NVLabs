@@ -17,6 +17,14 @@ export class ExploreComponent {
 
 @Component({
 	moduleId: module.id,
+	selector: 'nvlabs-fundamentals',
+	templateUrl: './nvp-fundamentals.component.html'
+})
+export class NVPFundamentalsComponent {
+}
+
+@Component({
+	moduleId: module.id,
 	selector: 'nvlabs-recommended-reading',
 	templateUrl: './recommended-reading.component.html'
 })

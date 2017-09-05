@@ -50,6 +50,7 @@ var AppModule = /** @class */ (function () {
                 showcase_component_1.TransientComputingComponent,
                 showcase_component_1.LowPowerIoTComponent,
                 explore_component_1.ExploreComponent,
+                explore_component_1.NVPFundamentalsComponent,
                 explore_component_1.RecommendedReadingComponent,
                 about_component_1.AboutComponent,
                 terms_component_1.TermsComponent,

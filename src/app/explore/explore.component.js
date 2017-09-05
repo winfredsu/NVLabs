@@ -29,6 +29,19 @@ var ExploreComponent = /** @class */ (function () {
     return ExploreComponent;
 }());
 exports.ExploreComponent = ExploreComponent;
+var NVPFundamentalsComponent = /** @class */ (function () {
+    function NVPFundamentalsComponent() {
+    }
+    NVPFundamentalsComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'nvlabs-fundamentals',
+            templateUrl: './nvp-fundamentals.component.html'
+        })
+    ], NVPFundamentalsComponent);
+    return NVPFundamentalsComponent;
+}());
+exports.NVPFundamentalsComponent = NVPFundamentalsComponent;
 var RecommendedReadingComponent = /** @class */ (function () {
     function RecommendedReadingComponent(title) {
         this.reviewPapers = [

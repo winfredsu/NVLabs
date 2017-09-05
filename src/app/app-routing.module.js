@@ -42,6 +42,7 @@ var routes = [
     { path: 'showcase/low-power-iot', component: showcase_component_1.LowPowerIoTComponent },
     { path: 'explore', component: explore_component_1.ExploreComponent },
     { path: 'explore/recommended-reading', component: explore_component_1.RecommendedReadingComponent },
+    { path: 'explore/nvp-fundamentals', component: explore_component_1.NVPFundamentalsComponent },
     { path: 'about', component: about_component_1.AboutComponent },
     { path: 'terms-and-conditions', component: terms_component_1.TermsComponent },
 ];
