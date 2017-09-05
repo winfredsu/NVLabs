@@ -3,11 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PlatformComponent, PlatformOverviewComponent, PlatformTechspecsComponent, PlatformGettingStartedComponent, PlatformDownloadsComponent } from './platform/platform.component';
 import { SimulatorComponent, SimulatorOverviewComponent, SimulatorGettingStartedComponent, SimulatorDocumentationComponent, SimulatorExamplesComponent } from './simulator/simulator.component';
-import { ShowcaseComponent } from './showcase/showcase.component';
+import { ShowcaseComponent, SelfPoweredWearablesComponent, TransientComputingComponent, LowPowerIoTComponent } from './showcase/showcase.component';
 import { ExploreComponent } from './explore/explore.component';
 import { RecommendedReadingComponent } from './explore/recommended-reading/recommended-reading.component';
 import { AboutComponent } from './about/about.component';
-import { BreathMonitorComponent } from './showcase/breath-monitor/breath-monitor.component';
 import { TermsComponent } from './terms/terms.component';
 
 const routes: Routes = [
@@ -32,7 +31,9 @@ const routes: Routes = [
 		]
 	},
 	{ path: 'showcase', component: ShowcaseComponent },
-	{ path: 'showcase/breath-monitor', component: BreathMonitorComponent },
+	{ path: 'showcase/self-powered-wearables', component: SelfPoweredWearablesComponent },
+	{ path: 'showcase/transient-computing', component: TransientComputingComponent },
+	{ path: 'showcase/low-power-iot', component: LowPowerIoTComponent },
 	{ path: 'explore', component: ExploreComponent },
 	{ path: 'explore/recommended-reading', component: RecommendedReadingComponent },
 	{ path: 'about', component: AboutComponent },

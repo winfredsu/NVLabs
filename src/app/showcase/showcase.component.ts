@@ -14,3 +14,30 @@ export class ShowcaseComponent {
 		}
 	}	
 }
+
+@Component({
+	moduleId: module.id,
+	selector: 'nvlabs-self-powered-wearables',
+	templateUrl: './self-powered-wearables.component.html'
+})
+export class SelfPoweredWearablesComponent {
+
+}
+
+@Component({
+	moduleId: module.id,
+	selector: 'nvlabs-transient-computing',
+	templateUrl: './transient-computing.component.html'
+})
+export class TransientComputingComponent {
+
+}
+
+@Component({
+	moduleId: module.id,
+	selector: 'nvlabs-low-power-iot',
+	templateUrl: './low-power-iot.component.html'
+})
+export class LowPowerIoTComponent {
+
+}

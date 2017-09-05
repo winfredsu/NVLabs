@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
 var RecommendedReadingComponent = /** @class */ (function () {
     function RecommendedReadingComponent(title) {
         this.reviewPapers = [
@@ -92,14 +94,14 @@ var RecommendedReadingComponent = /** @class */ (function () {
         title.setTitle('Recommended Reading | NVLabs');
     }
     RecommendedReadingComponent = __decorate([
-        Component({
+        core_1.Component({
             moduleId: module.id,
             selector: 'nvlabs-recommended-reading',
             templateUrl: './recommended-reading.component.html'
         }),
-        __metadata("design:paramtypes", [Title])
+        __metadata("design:paramtypes", [platform_browser_1.Title])
     ], RecommendedReadingComponent);
     return RecommendedReadingComponent;
 }());
-export { RecommendedReadingComponent };
+exports.RecommendedReadingComponent = RecommendedReadingComponent;
 //# sourceMappingURL=recommended-reading.component.js.map

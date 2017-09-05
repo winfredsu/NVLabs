@@ -1,1 +1,0 @@
-{"version":3,"sources":["breath-monitor.component.ts"],"names":[],"mappings":";;;;;;AAAA,OAAO,EAAE,SAAA,EAAU,MAAO,eAAA,CAAgB;AAO1C;IAAA;IAEA,CAAC;IAFY,sBAAsB;QALlC,SAAS,CAAC;YACV,QAAQ,EAAE,MAAM,CAAC,EAAE;YACnB,QAAQ,EAAE,uBAAuB;YACjC,WAAW,EAAE,iCAAiC;SAC9C,CAAC;OACW,sBAAsB,CAElC;IAAD,6BAAC;CAFD,AAEC,IAAA;SAFY,sBAAsB","file":"breath-monitor.component.js","sourceRoot":""}

@@ -1,5 +1,7 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, HostListener } from '@angular/core';
+// import { DOCUMENT } from '@angular/platform-browser';
 import { Router, NavigationEnd } from '@angular/router';
+declare var $: any;
 
 @Component({
 	moduleId: module.id,
@@ -9,6 +11,8 @@ import { Router, NavigationEnd } from '@angular/router';
 export class AppComponent implements OnInit {
 
 	constructor(
+		// @Inject(DOCUMENT) private document: Document,
+		// @ViewChild('navbarFixedTop') private elNavbarFixedTop: ElementRef,
 		private el: ElementRef,
 		private router: Router) {}
 
@@ -18,6 +22,11 @@ export class AppComponent implements OnInit {
 
 	public removeClass(className: string) {
 		this.el.nativeElement.classList.remove(className);
+	}
+
+	@HostListener('window:scroll', [])
+	onScroll() {
+		$('.navbar-collapse.in').collapse('hide');
 	}
 
 	ngOnInit() {

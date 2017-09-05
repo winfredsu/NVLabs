@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10,9 +11,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-import { Component, HostListener, Inject, Input } from '@angular/core';
-import { DOCUMENT, Title } from '@angular/platform-browser';
-import { AppComponent } from '../app.component';
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
+var app_component_1 = require("../app.component");
 var HomeComponent = /** @class */ (function () {
     function HomeComponent(document, appComponent, title) {
         this.document = document;
@@ -42,31 +44,31 @@ var HomeComponent = /** @class */ (function () {
         this.appComponent.addClass('page-on-scroll');
     };
     __decorate([
-        HostListener('window:scroll', []),
+        core_1.HostListener('window:scroll', []),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], HomeComponent.prototype, "onWindowScroll", null);
     __decorate([
-        HostListener('window:resize', ['$event']),
+        core_1.HostListener('window:resize', ['$event']),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Object]),
         __metadata("design:returntype", void 0)
     ], HomeComponent.prototype, "onResize", null);
     HomeComponent = __decorate([
-        Component({
+        core_1.Component({
             moduleId: module.id,
             selector: 'nvlabs-home',
             templateUrl: './home.component.html'
             // styleUrls: ['./app.component.css']	
         }),
-        __param(0, Inject(DOCUMENT)),
-        __param(1, Input('AppComponent')),
+        __param(0, core_1.Inject(platform_browser_1.DOCUMENT)),
+        __param(1, core_1.Input('AppComponent')),
         __metadata("design:paramtypes", [Document,
-            AppComponent,
-            Title])
+            app_component_1.AppComponent,
+            platform_browser_1.Title])
     ], HomeComponent);
     return HomeComponent;
 }());
-export { HomeComponent };
+exports.HomeComponent = HomeComponent;
 //# sourceMappingURL=home.component.js.map

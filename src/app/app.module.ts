@@ -9,11 +9,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PlatformComponent, PlatformOverviewComponent, PlatformTechspecsComponent, PlatformGettingStartedComponent, PlatformDownloadsComponent } from './platform/platform.component';
 import { SimulatorComponent, SimulatorOverviewComponent, SimulatorGettingStartedComponent, SimulatorDocumentationComponent, SimulatorExamplesComponent } from './simulator/simulator.component';
-import { ShowcaseComponent } from './showcase/showcase.component';
+import { ShowcaseComponent, SelfPoweredWearablesComponent, TransientComputingComponent, LowPowerIoTComponent } from './showcase/showcase.component';
 import { ExploreComponent } from './explore/explore.component';
 import { RecommendedReadingComponent } from './explore/recommended-reading/recommended-reading.component';
 import { AboutComponent } from './about/about.component';
-import { BreathMonitorComponent } from './showcase/breath-monitor/breath-monitor.component';
 import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
@@ -39,10 +38,12 @@ import { TermsComponent } from './terms/terms.component';
 		SimulatorDocumentationComponent,
 		SimulatorExamplesComponent,
 		ShowcaseComponent,
+		SelfPoweredWearablesComponent,
+		TransientComputingComponent,
+		LowPowerIoTComponent,
 		ExploreComponent,
 		RecommendedReadingComponent,
 		AboutComponent,
-		BreathMonitorComponent,
 		TermsComponent,
 	],
 	bootstrap: [AppComponent]

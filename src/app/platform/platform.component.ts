@@ -35,10 +35,11 @@ export class PlatformComponent implements OnInit {
 			startPosition: 'URLHash'
 		});
 
-		this.calcNavAffix();
 		this.calcTitleMinHeight();
 		this.calcNavMinHeight();
 		this.calcNavWidth();
+		//this.calcNavAffix();
+		setTimeout(()=>{ this.calcNavAffix(); }, 500 );
 	}
 
 	goToSlide(id: number) {
@@ -47,15 +48,17 @@ export class PlatformComponent implements OnInit {
 
 	@HostListener('window:resize', []) 
 	onResize() {
-		this.calcNavAffix();
 		this.calcTitleMinHeight();
 		this.calcNavMinHeight();
 		this.calcNavWidth();
+
+		this.calcNavAffix();
 	}
 	
 	private calcNavAffix() {
-		this.navAffix = this.elIntro.nativeElement.offsetHeight+145;
+		this.navAffix = this.elIntro.nativeElement.offsetHeight+130;
 
+		// console.log('platform navAffix:' + this.navAffix);
 		this.navTop = this.elTitle.nativeElement.offsetHeight+97;
 	}
 

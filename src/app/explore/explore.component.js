@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { Title } from '@angular/platform-browser';
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var platform_browser_1 = require("@angular/platform-browser");
 var ExploreComponent = /** @class */ (function () {
     function ExploreComponent(router, title) {
         if (router.url === '/explore') {
@@ -17,14 +19,14 @@ var ExploreComponent = /** @class */ (function () {
         }
     }
     ExploreComponent = __decorate([
-        Component({
+        core_1.Component({
             moduleId: module.id,
             selector: 'nvlabs-explore',
             templateUrl: './explore.component.html'
         }),
-        __metadata("design:paramtypes", [Router, Title])
+        __metadata("design:paramtypes", [router_1.Router, platform_browser_1.Title])
     ], ExploreComponent);
     return ExploreComponent;
 }());
-export { ExploreComponent };
+exports.ExploreComponent = ExploreComponent;
 //# sourceMappingURL=explore.component.js.map
