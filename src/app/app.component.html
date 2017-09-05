@@ -1,9 +1,9 @@
-<header class="header navbar-fixed-top">
+<header #navbarFixedTop class="header navbar-fixed-top">
 	<!-- Navbar -->
 	<nav class="navbar" role="navigation">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="menu-container js_nav-item">
+			<div class="menu-container">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="toggle-icon"></span>
@@ -11,7 +11,7 @@
 
 				<!-- Logo -->
 				<div class="logo">
-					<a class="logo-wrap" href="#body">
+					<a class="logo-wrap" routerLink="/home">
 						<img class="logo-img logo-img-main" src="img/logo.png" alt="NVLabs Logo">
 						<img class="logo-img logo-img-active" src="img/logo-dark.png" alt="NVLabs Logo">
 					</a>
@@ -49,7 +49,7 @@
 	<div class="section-seperator"></div>
 	<div class="content-xs container">
 		<div class="row">
-			<div class="col-sm-2 col-xs-3 sm-margin-b-30">
+			<div class="col-sm-2 col-xs-3">
 				<!-- List -->
 				<ul class="list-unstyled footer-list">
 					<li class="footer-list-item"><a routerLink="/home">Home</a></li>
@@ -58,7 +58,7 @@
 				</ul>
 				<!-- End List -->
 			</div>
-			<div class="col-sm-2 col-xs-3 sm-margin-b-30">
+			<div class="col-sm-2 col-xs-3">
 				<!-- List -->
 				<ul class="list-unstyled footer-list">
 					<li class="footer-list-item"><a routerLink="/showcase">Showcase</a></li>
@@ -67,17 +67,15 @@
 				</ul>
 				<!-- End List -->
 			</div>
-			<div class="col-sm-3 col-xs-3">
+			<div class="col-sm-8 col-xs-6">
 				<!-- List -->
 				<ul class="list-unstyled footer-list">
 					<li class="footer-list-item"><a routerLink="terms-and-conditions">Terms &amp; Conditions</a></li>
 				</ul>
-				<!-- End List -->
-			</div>
-			<div class="col-sm-2 col-sm-offset-3 col-xs-3">
-				<div class="margin-b-0 text-right">
+				<a routerLink="/home" class="margin-b-0 text-right">
 					<img class="footer-logo" src="img/logo-dark.png" alt="Aitonepage Logo">
-				</div>
+				</a>
+				<!-- End List -->
 			</div>
 		</div>
 		<!--// end row -->
