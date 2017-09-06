@@ -7,20 +7,29 @@
 					New to nonvolatile processors? Don't worry, we'll help you understand the fundamentals within just a few minutes. Get started now and make yourself an NVP-pro!
 				</em>
 			</div>
-			<h2>What Is Nonvolatile Processor And Why It Matters?</h2>
+			<h2>What Is Nonvolatile Processor And Why Matters?</h2>
 			<div class="figure">
-				<img class="img-responsive" src="img/fundamentals/1.png" alt="Desired features of IoT processor">
+				<img class="img-responsive" src="img/explore/1.jpg" alt="Desired features of IoT processor">
+				<div class="caption">Figure 1: Four desired features of IoT processor</div>
 			</div>
-			<p>Before we dive into nonvolatile processors in detail, let's start with a question on IoT processors: <strong>what is the desired features of processors in IoT edge devices?</strong> This question is quite important because the processors acts as the "brain" of IoT devices and handles most of the computation and control tasks. As shown in Figure 1, we identify four features that an IoT processor should have:</p>
+			<p>Before we dive into nonvolatile processors in detail, let's start with a question on IoT processors: <strong>what is the desired features of processors in IoT edge devices?</strong> This question is quite important because the processors acts as the "brain" of IoT devices and handles most of the computation and control tasks. As shown in Figure 1, we identify three features that an IoT processor should possess:</p>
 			<ul>
-				<li><strong>Ultra-low power:</strong> </li>
-				<li><strong>High efficiency:</strong> </li> 
-
+				<li><strong>Ultra-low power:</strong> The power envelopes for IoT edge devices are relatively small, and what's even worse, we have to reserve a large portion of power for wireless data transmission. For this reason, the processor must has ultra-low power consumption in both active and idle states.  </li>
+				<li><strong>Rapid response:</strong> In most of the time IoT processors stay in idle or off state, until an external event switch them to active mode. The switching cost must be minimized so that the precious energy can be reserved for userful task execution.</li>
+				<li><strong>Micro-sized:</strong> A micro-sized form factor is highly desired in use cases such as implantable devices and "smart dust".  </li>
+				<li><strong>High reliability:</strong> When IoT becomes more ingrained in our daily life, its reliability and security becomes a serious concern. Imagine what would happen if our health and lives is hacked via wearable or implantable devices! </li>
 			</ul>	
 			<div class="figure">
-				<img class="img-responsive" alt="Drawbacks of conventional processor">
+				<img class="img-responsive" src="img/explore/2.jpg" alt="Limitations of conventional processor">
+				<div class="caption">Figure 2: Limitations of conventional processor"</div>
 			</div>
-			<p>Conventional processors can hardly meet all those requirements for several reasons:</p>
+			<p>Unfortunately, conventional processors can hardly satisfy those requirements, as shown in Figure 2. The volatile nature of CMOS circuitry &mdash; <strong>"No power, no data"</strong> &mdash; becomes a fundamental limitation for IoT devices to achieve desirable power, size, reliability and response speed. </p>
+			<ul>
+				<li><strong>Power:</strong> As semiconductor feature size shrinks, static (leakage) power has exceeded dynamic power and dominates the total power consumption. Conventional processors have to consume pretty high leakage current to retain data, which results in a even tighter power budget for useful task execution. </li> 
+				<li><strong>Response speed:</strong> One way to mitigate the leakage power issue is to store the entire system states into nonvolatile memory (e.g., on-chip Flash) when switching from active to  idle or off state. However, reading or writing the nonvolatile memories will be both energy and time consuming. </li>
+
+			</ul>
+
 			<h2>How To Design An NVP?</h2>
 			<h2>Applications Of NVP</h2>
 

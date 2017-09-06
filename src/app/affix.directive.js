@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -11,9 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
+import { Directive, ElementRef, HostListener, Input, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
 var AffixDirective = /** @class */ (function () {
     function AffixDirective(document, el) {
         this.document = document;
@@ -30,26 +28,26 @@ var AffixDirective = /** @class */ (function () {
         }
     };
     __decorate([
-        core_1.Input('affix'),
+        Input('affix'),
         __metadata("design:type", Number)
     ], AffixDirective.prototype, "scrollOffset", void 0);
     __decorate([
-        core_1.Input(),
+        Input(),
         __metadata("design:type", Number)
     ], AffixDirective.prototype, "affixTop", void 0);
     __decorate([
-        core_1.HostListener('window:scroll', []),
+        HostListener('window:scroll', []),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], AffixDirective.prototype, "onWindowScroll", null);
     AffixDirective = __decorate([
-        core_1.Directive({ selector: '[affix]' }),
-        __param(0, core_1.Inject(platform_browser_1.DOCUMENT)),
+        Directive({ selector: '[affix]' }),
+        __param(0, Inject(DOCUMENT)),
         __metadata("design:paramtypes", [Document,
-            core_1.ElementRef])
+            ElementRef])
     ], AffixDirective);
     return AffixDirective;
 }());
-exports.AffixDirective = AffixDirective;
+export { AffixDirective };
 //# sourceMappingURL=affix.directive.js.map

@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,9 +7,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
+import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 var PlatformComponent = /** @class */ (function () {
     function PlatformComponent(title) {
         title.setTitle('Platform | NVLabs');
@@ -58,43 +56,43 @@ var PlatformComponent = /** @class */ (function () {
         this.navWidth = this.elTitleWrapper.nativeElement.offsetWidth;
     };
     __decorate([
-        core_1.ViewChild('title'),
-        __metadata("design:type", core_1.ElementRef)
+        ViewChild('title'),
+        __metadata("design:type", ElementRef)
     ], PlatformComponent.prototype, "elTitle", void 0);
     __decorate([
-        core_1.ViewChild('intro'),
-        __metadata("design:type", core_1.ElementRef)
+        ViewChild('intro'),
+        __metadata("design:type", ElementRef)
     ], PlatformComponent.prototype, "elIntro", void 0);
     __decorate([
-        core_1.ViewChild('nav'),
-        __metadata("design:type", core_1.ElementRef)
+        ViewChild('nav'),
+        __metadata("design:type", ElementRef)
     ], PlatformComponent.prototype, "elNav", void 0);
     __decorate([
-        core_1.ViewChild('titleWrapper'),
-        __metadata("design:type", core_1.ElementRef)
+        ViewChild('titleWrapper'),
+        __metadata("design:type", ElementRef)
     ], PlatformComponent.prototype, "elTitleWrapper", void 0);
     __decorate([
-        core_1.HostListener('window:resize', []),
+        HostListener('window:resize', []),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], PlatformComponent.prototype, "onResize", null);
     PlatformComponent = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvlabs-platform',
             templateUrl: './platform.component.html'
         }),
-        __metadata("design:paramtypes", [platform_browser_1.Title])
+        __metadata("design:paramtypes", [Title])
     ], PlatformComponent);
     return PlatformComponent;
 }());
-exports.PlatformComponent = PlatformComponent;
+export { PlatformComponent };
 var PlatformOverviewComponent = /** @class */ (function () {
     function PlatformOverviewComponent() {
     }
     PlatformOverviewComponent = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvlabs-platform-overview',
             templateUrl: './platform-overview.component.html'
@@ -102,12 +100,12 @@ var PlatformOverviewComponent = /** @class */ (function () {
     ], PlatformOverviewComponent);
     return PlatformOverviewComponent;
 }());
-exports.PlatformOverviewComponent = PlatformOverviewComponent;
+export { PlatformOverviewComponent };
 var PlatformTechspecsComponent = /** @class */ (function () {
     function PlatformTechspecsComponent() {
     }
     PlatformTechspecsComponent = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvlabs-platform-techspecs',
             templateUrl: './platform-techspecs.component.html'
@@ -115,12 +113,12 @@ var PlatformTechspecsComponent = /** @class */ (function () {
     ], PlatformTechspecsComponent);
     return PlatformTechspecsComponent;
 }());
-exports.PlatformTechspecsComponent = PlatformTechspecsComponent;
+export { PlatformTechspecsComponent };
 var PlatformGettingStartedComponent = /** @class */ (function () {
     function PlatformGettingStartedComponent() {
     }
     PlatformGettingStartedComponent = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvlabs-platform-getting-started',
             templateUrl: './platform-getting-started.component.html'
@@ -128,12 +126,12 @@ var PlatformGettingStartedComponent = /** @class */ (function () {
     ], PlatformGettingStartedComponent);
     return PlatformGettingStartedComponent;
 }());
-exports.PlatformGettingStartedComponent = PlatformGettingStartedComponent;
+export { PlatformGettingStartedComponent };
 var PlatformDownloadsComponent = /** @class */ (function () {
     function PlatformDownloadsComponent() {
     }
     PlatformDownloadsComponent = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvlabs-platform-downloads',
             templateUrl: './platform-downloads.component.html'
@@ -141,5 +139,5 @@ var PlatformDownloadsComponent = /** @class */ (function () {
     ], PlatformDownloadsComponent);
     return PlatformDownloadsComponent;
 }());
-exports.PlatformDownloadsComponent = PlatformDownloadsComponent;
+export { PlatformDownloadsComponent };
 //# sourceMappingURL=platform.component.js.map

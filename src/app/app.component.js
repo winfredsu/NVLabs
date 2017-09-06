@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,10 +7,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
+import { Component, ElementRef, HostListener } from '@angular/core';
 // import { DOCUMENT } from '@angular/platform-browser';
-var router_1 = require("@angular/router");
+import { Router, NavigationEnd } from '@angular/router';
 var AppComponent = /** @class */ (function () {
     function AppComponent(
         // @Inject(DOCUMENT) private document: Document,
@@ -32,28 +30,28 @@ var AppComponent = /** @class */ (function () {
     AppComponent.prototype.ngOnInit = function () {
         this.addClass('page-on-scroll');
         this.router.events.subscribe(function (evt) {
-            if (!(evt instanceof router_1.NavigationEnd)) {
+            if (!(evt instanceof NavigationEnd)) {
                 return;
             }
             window.scrollTo(0, 0);
         });
     };
     __decorate([
-        core_1.HostListener('window:scroll', []),
+        HostListener('window:scroll', []),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], AppComponent.prototype, "onScroll", null);
     AppComponent = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvlabs-app',
             templateUrl: './app.component.html'
         }),
-        __metadata("design:paramtypes", [core_1.ElementRef,
-            router_1.Router])
+        __metadata("design:paramtypes", [ElementRef,
+            Router])
     ], AppComponent);
     return AppComponent;
 }());
-exports.AppComponent = AppComponent;
+export { AppComponent };
 //# sourceMappingURL=app.component.js.map
