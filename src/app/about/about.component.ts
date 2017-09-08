@@ -39,20 +39,22 @@ export class AboutComponent implements OnInit {
 	ngOnInit(): void {
 		$("#sponsor-list").owlCarousel({
 			loop: true,
+			margin: 50,
 			autoplay: true,
-			autoplayTimeout: 5000,
-			//autoWidth: true,
-			responsive: {
-				0: { 
-					items: 2
-				},
-				768: {
-					items: 3
-				},
-				1200: {
-					items: 4
-				}
-			}
+			autoplayTimeout: 2500,
+			autoWidth: true,
+			items: 4
+			//responsive: {
+				//0: { 
+					//items: 2
+				//},
+				//768: {
+					//items: 3
+				//},
+				//1200: {
+					//items: 4
+				//}
+			//}
 		});
 	}
 }
