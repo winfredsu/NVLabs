@@ -19,9 +19,8 @@ export class HomeComponent implements OnInit, OnDestroy {
 
 	@HostListener('window:scroll', [])
 	onWindowScroll() {
-		if (this.document.body.scrollTop > 60) {
+		if (this.document.body.scrollTop > 60 || this.document.documentElement.scrollTop > 60) {
 			// add a page-on-scroll class to header 
-			//console.log($event);
 			this.appComponent.addClass('page-on-scroll');
 		} else {
 			// remove page-on-scroll class 

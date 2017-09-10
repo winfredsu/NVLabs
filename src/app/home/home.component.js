@@ -23,9 +23,8 @@ var HomeComponent = /** @class */ (function () {
         title.setTitle('NVLabs');
     }
     HomeComponent.prototype.onWindowScroll = function () {
-        if (this.document.body.scrollTop > 60) {
+        if (this.document.body.scrollTop > 60 || this.document.documentElement.scrollTop > 60) {
             // add a page-on-scroll class to header 
-            //console.log($event);
             this.appComponent.addClass('page-on-scroll');
         }
         else {

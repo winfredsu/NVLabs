@@ -20,7 +20,7 @@ var AffixDirective = /** @class */ (function () {
         this.el = el;
     }
     AffixDirective.prototype.onWindowScroll = function () {
-        if (this.document.body.scrollTop > this.scrollOffset) {
+        if (this.document.body.scrollTop > this.scrollOffset || this.document.documentElement.scrollTop > this.scrollOffset) {
             this.el.nativeElement.classList.add('affix');
             this.el.nativeElement.style.top = this.affixTop + 'px';
         }
