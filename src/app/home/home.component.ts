@@ -1,6 +1,8 @@
-import { Component, OnInit, HostListener, Inject, Input, OnDestroy } from '@angular/core';
+import { Component, OnInit, HostListener, Inject, Input, OnDestroy  } from '@angular/core';
 import { DOCUMENT, Title } from '@angular/platform-browser';
 import { AppComponent } from '../app.component';
+import { MdDialog, MdDialogRef } from '@angular/material';
+
 
 @Component({
 	moduleId: module.id,
@@ -11,6 +13,7 @@ import { AppComponent } from '../app.component';
 export class HomeComponent implements OnInit, OnDestroy {
 	height: number;
 	constructor(
+		public dialog: MdDialog,
 		@Inject(DOCUMENT) private document: Document,
 		@Input('AppComponent') private appComponent: AppComponent, 
 		private title: Title) {
@@ -41,4 +44,22 @@ export class HomeComponent implements OnInit, OnDestroy {
 	ngOnDestroy() {
 		this.appComponent.addClass('page-on-scroll');
 	}
+
+  openDialog(): void {
+  let dialogRef = this.dialog.open(NVPOneMinuteDialog, {
+    width: '800px',
+    height: '600px'
+  });
+	}
+}
+
+@Component({
+	moduleId: module.id,
+	selector: 'nvp-one-minute-dialog',
+	templateUrl: './nvp-one-minute-dialog.html'
+})
+export class NVPOneMinuteDialog {
+	  constructor(
+    public dialogRef: MdDialogRef<NVPOneMinuteDialog>,
+    ){}
 }

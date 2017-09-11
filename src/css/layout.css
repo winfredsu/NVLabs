@@ -2151,3 +2151,11 @@ a.plain {
 .plain-content table tr:nth-child(2n) {
   background-color: #f6f8fa;
 }
+
+.mat-dialog-container {
+  padding: 0 0 !important;
+}
+
+.cdk-overlay-pane {
+  height: auto !important;
+}

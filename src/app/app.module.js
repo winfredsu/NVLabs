@@ -8,8 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var animations_1 = require("@angular/platform-browser/animations");
 var app_routing_module_1 = require("./app-routing.module");
 var core_2 = require("@agm/core");
+var material_1 = require("@angular/material");
 var affix_directive_1 = require("./affix.directive");
 var app_component_1 = require("./app.component");
 var home_component_1 = require("./home/home.component");
@@ -25,8 +27,10 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [
+                material_1.MdDialogModule,
                 platform_browser_1.BrowserModule,
                 app_routing_module_1.AppRoutingModule,
+                animations_1.BrowserAnimationsModule,
                 core_2.AgmCoreModule.forRoot({
                     apiKey: 'AIzaSyDFquj9AnLZG3zPXBPdovChfCxujtu2V8E'
                 })
@@ -35,6 +39,7 @@ var AppModule = /** @class */ (function () {
                 affix_directive_1.AffixDirective,
                 app_component_1.AppComponent,
                 home_component_1.HomeComponent,
+                home_component_1.NVPOneMinuteDialog,
                 platform_component_1.PlatformComponent,
                 platform_component_1.PlatformOverviewComponent,
                 platform_component_1.PlatformTechspecsComponent,
@@ -54,6 +59,10 @@ var AppModule = /** @class */ (function () {
                 explore_component_1.RecommendedReadingComponent,
                 about_component_1.AboutComponent,
                 terms_component_1.TermsComponent,
+            ],
+            providers: [],
+            entryComponents: [
+                home_component_1.NVPOneMinuteDialog
             ],
             bootstrap: [app_component_1.AppComponent]
         })

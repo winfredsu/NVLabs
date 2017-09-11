@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AgmCoreModule } from '@agm/core';
+import { MdDialogModule } from '@angular/material';
 
 import { AffixDirective } from './affix.directive';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent, NVPOneMinuteDialog } from './home/home.component';
 import { PlatformComponent, PlatformOverviewComponent, PlatformTechspecsComponent, PlatformGettingStartedComponent, PlatformDownloadsComponent } from './platform/platform.component';
 import { SimulatorComponent, SimulatorOverviewComponent, SimulatorGettingStartedComponent, SimulatorConceptAndStructureComponent, SimulatorExampleComponent } from './simulator/simulator.component';
 import { ShowcaseComponent, SelfPoweredWearablesComponent, TransientComputingComponent, LowPowerIoTComponent } from './showcase/showcase.component';
@@ -16,16 +18,20 @@ import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
 	imports: [
+		MdDialogModule,
 		BrowserModule,
 		AppRoutingModule,
+		BrowserAnimationsModule,
 		AgmCoreModule.forRoot({
 			apiKey: 'AIzaSyDFquj9AnLZG3zPXBPdovChfCxujtu2V8E' 
 		})
 	],
 	declarations: [
+
 		AffixDirective,
 		AppComponent,
 		HomeComponent,
+		NVPOneMinuteDialog,	
 		PlatformComponent,
 		PlatformOverviewComponent,
 		PlatformTechspecsComponent,
@@ -45,6 +51,11 @@ import { TermsComponent } from './terms/terms.component';
 		RecommendedReadingComponent,
 		AboutComponent,
 		TermsComponent,
+	],
+	providers: [
+	],
+	entryComponents: [
+	NVPOneMinuteDialog
 	],
 	bootstrap: [AppComponent]
 })
