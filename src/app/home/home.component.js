@@ -15,8 +15,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("../app.component");
+var material_1 = require("@angular/material");
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent(document, appComponent, title) {
+    function HomeComponent(dialog, document, appComponent, title) {
+        this.dialog = dialog;
         this.document = document;
         this.appComponent = appComponent;
         this.title = title;
@@ -42,6 +44,12 @@ var HomeComponent = /** @class */ (function () {
     HomeComponent.prototype.ngOnDestroy = function () {
         this.appComponent.addClass('page-on-scroll');
     };
+    HomeComponent.prototype.openDialog = function () {
+        var dialogRef = this.dialog.open(NVPOneMinuteDialog, {
+            width: '800px',
+            height: '600px'
+        });
+    };
     __decorate([
         core_1.HostListener('window:scroll', []),
         __metadata("design:type", Function),
@@ -61,13 +69,29 @@ var HomeComponent = /** @class */ (function () {
             templateUrl: './home.component.html'
             // styleUrls: ['./app.component.css']	
         }),
-        __param(0, core_1.Inject(platform_browser_1.DOCUMENT)),
-        __param(1, core_1.Input('AppComponent')),
-        __metadata("design:paramtypes", [Document,
+        __param(1, core_1.Inject(platform_browser_1.DOCUMENT)),
+        __param(2, core_1.Input('AppComponent')),
+        __metadata("design:paramtypes", [material_1.MdDialog,
+            Document,
             app_component_1.AppComponent,
             platform_browser_1.Title])
     ], HomeComponent);
     return HomeComponent;
 }());
 exports.HomeComponent = HomeComponent;
+var NVPOneMinuteDialog = /** @class */ (function () {
+    function NVPOneMinuteDialog(dialogRef) {
+        this.dialogRef = dialogRef;
+    }
+    NVPOneMinuteDialog = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'nvp-one-minute-dialog',
+            templateUrl: './nvp-one-minute-dialog.html'
+        }),
+        __metadata("design:paramtypes", [material_1.MdDialogRef])
+    ], NVPOneMinuteDialog);
+    return NVPOneMinuteDialog;
+}());
+exports.NVPOneMinuteDialog = NVPOneMinuteDialog;
 //# sourceMappingURL=home.component.js.map
