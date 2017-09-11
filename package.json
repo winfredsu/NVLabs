@@ -8,7 +8,7 @@
     "build:watch": "tsc -p src/ -w",
     "serve": "lite-server -c=bs-config.json",
     "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
-		"build:aot": "ngc -p tsconfig-aot.json && rollup -c rollup-config.js",
+    "build:aot": "ngc -p tsconfig-aot.json && rollup -c rollup-config.js",
     "serve:aot": "lite-server -c=bs-config.aot.json",
     "start:aot": "concurrently \"npm run build:aot\" \"npm run serve:aot\""
   },
