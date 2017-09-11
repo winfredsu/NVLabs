@@ -30,14 +30,40 @@ var ExploreComponent = /** @class */ (function () {
 }());
 exports.ExploreComponent = ExploreComponent;
 var NVPFundamentalsComponent = /** @class */ (function () {
-    function NVPFundamentalsComponent() {
+    function NVPFundamentalsComponent(route, router) {
+        this.route = route;
+        this.router = router;
     }
+    NVPFundamentalsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.router.events.subscribe(function (s) {
+            if (s instanceof router_1.NavigationEnd) {
+                var tree = _this.router.parseUrl(_this.router.url);
+                if (tree.fragment) {
+                    var element = document.querySelector("#" + tree.fragment);
+                    if (element) {
+                        element.scrollIntoView(element);
+                    }
+                }
+            }
+        });
+    };
+    NVPFundamentalsComponent.prototype.onAnchorClick = function () {
+        this.route.fragment.subscribe(function (f) {
+            var element = document.querySelector("#" + f);
+            if (element) {
+                element.scrollIntoView({ block: "start", inline: "start" });
+                window.scrollBy(0, -107);
+            }
+        });
+    };
     NVPFundamentalsComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'nvlabs-fundamentals',
             templateUrl: './nvp-fundamentals.component.html'
-        })
+        }),
+        __metadata("design:paramtypes", [router_1.ActivatedRoute, router_1.Router])
     ], NVPFundamentalsComponent);
     return NVPFundamentalsComponent;
 }());

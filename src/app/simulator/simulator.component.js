@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var router_1 = require("@angular/router");
 var SimulatorComponent = /** @class */ (function () {
     function SimulatorComponent(title) {
         title.setTitle('Simulator | NVLabs');
@@ -100,30 +101,39 @@ var SimulatorGettingStartedComponent = /** @class */ (function () {
     return SimulatorGettingStartedComponent;
 }());
 exports.SimulatorGettingStartedComponent = SimulatorGettingStartedComponent;
-var SimulatorDocumentationComponent = /** @class */ (function () {
-    function SimulatorDocumentationComponent() {
+var SimulatorConceptAndStructureComponent = /** @class */ (function () {
+    function SimulatorConceptAndStructureComponent(route) {
+        this.route = route;
     }
-    SimulatorDocumentationComponent = __decorate([
+    SimulatorConceptAndStructureComponent.prototype.onAnchorClick = function () {
+        this.route.fragment.subscribe(function (f) {
+            var element = document.querySelector("#" + f);
+            if (element)
+                element.scrollIntoView(element);
+        });
+    };
+    SimulatorConceptAndStructureComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'nvlabs-simulator-documentation',
-            templateUrl: './simulator-documentation.component.html'
-        })
-    ], SimulatorDocumentationComponent);
-    return SimulatorDocumentationComponent;
+            selector: 'nvlabs-simulator-concept-and-structure',
+            templateUrl: './simulator-concept-and-structure.component.html'
+        }),
+        __metadata("design:paramtypes", [router_1.ActivatedRoute])
+    ], SimulatorConceptAndStructureComponent);
+    return SimulatorConceptAndStructureComponent;
 }());
-exports.SimulatorDocumentationComponent = SimulatorDocumentationComponent;
-var SimulatorExamplesComponent = /** @class */ (function () {
-    function SimulatorExamplesComponent() {
+exports.SimulatorConceptAndStructureComponent = SimulatorConceptAndStructureComponent;
+var SimulatorExampleComponent = /** @class */ (function () {
+    function SimulatorExampleComponent() {
     }
-    SimulatorExamplesComponent = __decorate([
+    SimulatorExampleComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'nvlabs-simulator-examples',
-            templateUrl: './simulator-examples.component.html'
+            selector: 'nvlabs-simulator-example',
+            templateUrl: './simulator-example.component.html'
         })
-    ], SimulatorExamplesComponent);
-    return SimulatorExamplesComponent;
+    ], SimulatorExampleComponent);
+    return SimulatorExampleComponent;
 }());
-exports.SimulatorExamplesComponent = SimulatorExamplesComponent;
+exports.SimulatorExampleComponent = SimulatorExampleComponent;
 //# sourceMappingURL=simulator.component.js.map

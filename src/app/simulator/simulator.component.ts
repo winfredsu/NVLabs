@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
 	moduleId: module.id,
@@ -76,18 +77,25 @@ export class SimulatorGettingStartedComponent {
 
 @Component({
 	moduleId: module.id,
-	selector: 'nvlabs-simulator-documentation',
-	templateUrl: './simulator-documentation.component.html'
+	selector: 'nvlabs-simulator-concept-and-structure',
+	templateUrl: './simulator-concept-and-structure.component.html'
 })
-export class SimulatorDocumentationComponent {
+export class SimulatorConceptAndStructureComponent {
+  constructor( private route: ActivatedRoute ) {}
 
+  onAnchorClick ( ) {
+    this.route.fragment.subscribe ( f => {
+      const element = document.querySelector ( "#" + f );
+      if ( element ) element.scrollIntoView ( element );
+    });
+  }
 }
 
 @Component({
 	moduleId: module.id,
-	selector: 'nvlabs-simulator-examples',
-	templateUrl: './simulator-examples.component.html'
+	selector: 'nvlabs-simulator-example',
+	templateUrl: './simulator-example.component.html'
 })
-export class SimulatorExamplesComponent {
+export class SimulatorExampleComponent {
 
 }

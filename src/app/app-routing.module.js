@@ -32,8 +32,8 @@ var routes = [
             { path: '', redirectTo: 'overview', pathMatch: 'full' },
             { path: 'overview', component: simulator_component_1.SimulatorOverviewComponent },
             { path: 'getting-started', component: simulator_component_1.SimulatorGettingStartedComponent },
-            { path: 'documentation', component: simulator_component_1.SimulatorDocumentationComponent },
-            { path: 'examples', component: simulator_component_1.SimulatorExamplesComponent }
+            { path: 'concept-and-structure', component: simulator_component_1.SimulatorConceptAndStructureComponent },
+            { path: 'example', component: simulator_component_1.SimulatorExampleComponent }
         ]
     },
     { path: 'showcase', component: showcase_component_1.ShowcaseComponent },
