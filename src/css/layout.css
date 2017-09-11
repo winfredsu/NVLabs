@@ -2153,9 +2153,21 @@ a.plain {
 }
 
 .mat-dialog-container {
-  padding: 0 0 !important;
+	padding: 0 0 !important;
 }
 
-.cdk-overlay-pane {
-  height: auto !important;
+#buy-now {
+	padding: 25px 25px;
 }
+
+/*.cdk-overlay-pane {*/
+  /*height: auto !important;*/
+	/*width: 990px !important;*/
+/*}*/
+
+/*@media( max-width: 991px){*/
+	/*.cdk-overlay-pane {*/
+		/*width: 768px !important;*/
+	/*}*/
+/*}*/
+

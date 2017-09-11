@@ -47,8 +47,8 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   openDialog(): void {
   let dialogRef = this.dialog.open(NVPOneMinuteDialog, {
-    width: '800px',
-    height: '600px'
+		width: '990px',
+		height: 'auto'
   });
 	}
 }

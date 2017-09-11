@@ -11,8 +11,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var material_1 = require("@angular/material");
 var PlatformComponent = /** @class */ (function () {
-    function PlatformComponent(title) {
+    function PlatformComponent(title, dialog) {
+        this.dialog = dialog;
         title.setTitle('Platform | NVLabs');
     }
     PlatformComponent.prototype.ngOnInit = function () {
@@ -57,6 +59,12 @@ var PlatformComponent = /** @class */ (function () {
     PlatformComponent.prototype.calcNavWidth = function () {
         this.navWidth = this.elTitleWrapper.nativeElement.offsetWidth;
     };
+    PlatformComponent.prototype.openDialog = function () {
+        var dialogRef = this.dialog.open(BuyNowDialog, {
+            width: '600px',
+            height: '400px'
+        });
+    };
     __decorate([
         core_1.ViewChild('title'),
         __metadata("design:type", core_1.ElementRef)
@@ -85,11 +93,26 @@ var PlatformComponent = /** @class */ (function () {
             selector: 'nvlabs-platform',
             templateUrl: './platform.component.html'
         }),
-        __metadata("design:paramtypes", [platform_browser_1.Title])
+        __metadata("design:paramtypes", [platform_browser_1.Title, material_1.MdDialog])
     ], PlatformComponent);
     return PlatformComponent;
 }());
 exports.PlatformComponent = PlatformComponent;
+var BuyNowDialog = /** @class */ (function () {
+    function BuyNowDialog(dialogRef) {
+        this.dialogRef = dialogRef;
+    }
+    BuyNowDialog = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'buy-now-dialog',
+            templateUrl: './buy-now-dialog.html'
+        }),
+        __metadata("design:paramtypes", [material_1.MdDialogRef])
+    ], BuyNowDialog);
+    return BuyNowDialog;
+}());
+exports.BuyNowDialog = BuyNowDialog;
 var PlatformOverviewComponent = /** @class */ (function () {
     function PlatformOverviewComponent() {
     }

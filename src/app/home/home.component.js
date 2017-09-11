@@ -46,8 +46,8 @@ var HomeComponent = /** @class */ (function () {
     };
     HomeComponent.prototype.openDialog = function () {
         var dialogRef = this.dialog.open(NVPOneMinuteDialog, {
-            width: '800px',
-            height: '600px'
+            width: '990px',
+            height: 'auto'
         });
     };
     __decorate([

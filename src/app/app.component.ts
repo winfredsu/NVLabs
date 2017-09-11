@@ -24,9 +24,14 @@ export class AppComponent implements OnInit {
 		this.el.nativeElement.classList.remove(className);
 	}
 
+	hide() {
+		$('.navbar-collapse.in').collapse('hide');
+	}
+
+
 	@HostListener('window:scroll', [])
 	onScroll() {
-		$('.navbar-collapse.in').collapse('hide');
+		this.hide();
 	}
 
 	ngOnInit() {

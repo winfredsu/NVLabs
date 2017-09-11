@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { MdDialog, MdDialogRef } from '@angular/material';
 declare var $: any;
 
 @Component({
@@ -18,7 +19,7 @@ export class PlatformComponent implements OnInit {
 	@ViewChild('intro') elIntro: ElementRef;
 	@ViewChild('nav') elNav: ElementRef;
 	@ViewChild('titleWrapper') elTitleWrapper: ElementRef;
-	constructor(title: Title) {
+	constructor(title: Title, public dialog: MdDialog) {
 		title.setTitle('Platform | NVLabs');
 	}
 
@@ -73,6 +74,25 @@ export class PlatformComponent implements OnInit {
 	private calcNavWidth() {
 		this.navWidth = this.elTitleWrapper.nativeElement.offsetWidth;
 	}
+
+	openDialog(): void {
+		let dialogRef = this.dialog.open(BuyNowDialog, {
+			width: '600px',
+			height: '400px'
+		});
+	}
+
+}
+
+@Component({
+	moduleId: module.id,
+	selector: 'buy-now-dialog',
+	templateUrl: './buy-now-dialog.html'
+})
+export class BuyNowDialog {
+	constructor(
+		public dialogRef: MdDialogRef<BuyNowDialog>,
+	){}
 }
 
 @Component({

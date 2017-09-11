@@ -41,6 +41,7 @@ var AppModule = /** @class */ (function () {
                 home_component_1.HomeComponent,
                 home_component_1.NVPOneMinuteDialog,
                 platform_component_1.PlatformComponent,
+                platform_component_1.BuyNowDialog,
                 platform_component_1.PlatformOverviewComponent,
                 platform_component_1.PlatformTechspecsComponent,
                 platform_component_1.PlatformDownloadsComponent,
@@ -62,7 +63,8 @@ var AppModule = /** @class */ (function () {
             ],
             providers: [],
             entryComponents: [
-                home_component_1.NVPOneMinuteDialog
+                home_component_1.NVPOneMinuteDialog,
+                platform_component_1.BuyNowDialog,
             ],
             bootstrap: [app_component_1.AppComponent]
         })

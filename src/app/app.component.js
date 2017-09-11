@@ -26,8 +26,11 @@ var AppComponent = /** @class */ (function () {
     AppComponent.prototype.removeClass = function (className) {
         this.el.nativeElement.classList.remove(className);
     };
-    AppComponent.prototype.onScroll = function () {
+    AppComponent.prototype.hide = function () {
         $('.navbar-collapse.in').collapse('hide');
+    };
+    AppComponent.prototype.onScroll = function () {
+        this.hide();
     };
     AppComponent.prototype.ngOnInit = function () {
         this.addClass('page-on-scroll');
