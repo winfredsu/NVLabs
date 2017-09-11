@@ -8,7 +8,7 @@ import { AffixDirective } from './affix.directive';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PlatformComponent, PlatformOverviewComponent, PlatformTechspecsComponent, PlatformGettingStartedComponent, PlatformDownloadsComponent } from './platform/platform.component';
-import { SimulatorComponent, SimulatorOverviewComponent, SimulatorGettingStartedComponent, SimulatorDocumentationComponent, SimulatorExamplesComponent } from './simulator/simulator.component';
+import { SimulatorComponent, SimulatorOverviewComponent, SimulatorGettingStartedComponent, SimulatorConceptAndStructureComponent, SimulatorExampleComponent } from './simulator/simulator.component';
 import { ShowcaseComponent, SelfPoweredWearablesComponent, TransientComputingComponent, LowPowerIoTComponent } from './showcase/showcase.component';
 import { ExploreComponent, RecommendedReadingComponent, NVPFundamentalsComponent } from './explore/explore.component';
 import { AboutComponent } from './about/about.component';
@@ -34,8 +34,8 @@ import { TermsComponent } from './terms/terms.component';
 		SimulatorComponent,
 		SimulatorOverviewComponent,
 		SimulatorGettingStartedComponent,
-		SimulatorDocumentationComponent,
-		SimulatorExamplesComponent,
+		SimulatorConceptAndStructureComponent,
+		SimulatorExampleComponent,
 		ShowcaseComponent,
 		SelfPoweredWearablesComponent,
 		TransientComputingComponent,
