@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
-import { Title } from '@angular/platform-browser';
-import { ActivatedRoute } from '@angular/router';
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
+var router_1 = require("@angular/router");
 var SimulatorComponent = /** @class */ (function () {
     function SimulatorComponent(title) {
         title.setTitle('Simulator | NVLabs');
@@ -41,43 +43,43 @@ var SimulatorComponent = /** @class */ (function () {
         this.navWidth = this.elTitleWrapper.nativeElement.offsetWidth;
     };
     __decorate([
-        ViewChild('title'),
-        __metadata("design:type", ElementRef)
+        core_1.ViewChild('title'),
+        __metadata("design:type", core_1.ElementRef)
     ], SimulatorComponent.prototype, "elTitle", void 0);
     __decorate([
-        ViewChild('intro'),
-        __metadata("design:type", ElementRef)
+        core_1.ViewChild('intro'),
+        __metadata("design:type", core_1.ElementRef)
     ], SimulatorComponent.prototype, "elIntro", void 0);
     __decorate([
-        ViewChild('nav'),
-        __metadata("design:type", ElementRef)
+        core_1.ViewChild('nav'),
+        __metadata("design:type", core_1.ElementRef)
     ], SimulatorComponent.prototype, "elNav", void 0);
     __decorate([
-        ViewChild('titleWrapper'),
-        __metadata("design:type", ElementRef)
+        core_1.ViewChild('titleWrapper'),
+        __metadata("design:type", core_1.ElementRef)
     ], SimulatorComponent.prototype, "elTitleWrapper", void 0);
     __decorate([
-        HostListener('window:resize', []),
+        core_1.HostListener('window:resize', []),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], SimulatorComponent.prototype, "onResize", null);
     SimulatorComponent = __decorate([
-        Component({
+        core_1.Component({
             moduleId: module.id,
             selector: 'nvlabs-simulator',
             templateUrl: './simulator.component.html'
         }),
-        __metadata("design:paramtypes", [Title])
+        __metadata("design:paramtypes", [platform_browser_1.Title])
     ], SimulatorComponent);
     return SimulatorComponent;
 }());
-export { SimulatorComponent };
+exports.SimulatorComponent = SimulatorComponent;
 var SimulatorOverviewComponent = /** @class */ (function () {
     function SimulatorOverviewComponent() {
     }
     SimulatorOverviewComponent = __decorate([
-        Component({
+        core_1.Component({
             moduleId: module.id,
             selector: 'nvlabs-simulator-overview',
             templateUrl: './simulator-overview.component.html'
@@ -85,12 +87,12 @@ var SimulatorOverviewComponent = /** @class */ (function () {
     ], SimulatorOverviewComponent);
     return SimulatorOverviewComponent;
 }());
-export { SimulatorOverviewComponent };
+exports.SimulatorOverviewComponent = SimulatorOverviewComponent;
 var SimulatorGettingStartedComponent = /** @class */ (function () {
     function SimulatorGettingStartedComponent() {
     }
     SimulatorGettingStartedComponent = __decorate([
-        Component({
+        core_1.Component({
             moduleId: module.id,
             selector: 'nvlabs-simulator-getting-started',
             templateUrl: './simulator-getting-started.component.html'
@@ -98,7 +100,7 @@ var SimulatorGettingStartedComponent = /** @class */ (function () {
     ], SimulatorGettingStartedComponent);
     return SimulatorGettingStartedComponent;
 }());
-export { SimulatorGettingStartedComponent };
+exports.SimulatorGettingStartedComponent = SimulatorGettingStartedComponent;
 var SimulatorConceptAndStructureComponent = /** @class */ (function () {
     function SimulatorConceptAndStructureComponent(route) {
         this.route = route;
@@ -111,21 +113,21 @@ var SimulatorConceptAndStructureComponent = /** @class */ (function () {
         });
     };
     SimulatorConceptAndStructureComponent = __decorate([
-        Component({
+        core_1.Component({
             moduleId: module.id,
             selector: 'nvlabs-simulator-concept-and-structure',
             templateUrl: './simulator-concept-and-structure.component.html'
         }),
-        __metadata("design:paramtypes", [ActivatedRoute])
+        __metadata("design:paramtypes", [router_1.ActivatedRoute])
     ], SimulatorConceptAndStructureComponent);
     return SimulatorConceptAndStructureComponent;
 }());
-export { SimulatorConceptAndStructureComponent };
+exports.SimulatorConceptAndStructureComponent = SimulatorConceptAndStructureComponent;
 var SimulatorExampleComponent = /** @class */ (function () {
     function SimulatorExampleComponent() {
     }
     SimulatorExampleComponent = __decorate([
-        Component({
+        core_1.Component({
             moduleId: module.id,
             selector: 'nvlabs-simulator-example',
             templateUrl: './simulator-example.component.html'
@@ -133,5 +135,5 @@ var SimulatorExampleComponent = /** @class */ (function () {
     ], SimulatorExampleComponent);
     return SimulatorExampleComponent;
 }());
-export { SimulatorExampleComponent };
+exports.SimulatorExampleComponent = SimulatorExampleComponent;
 //# sourceMappingURL=simulator.component.js.map
