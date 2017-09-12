@@ -14,7 +14,6 @@ import { ExploreComponent, RecommendedReadingComponent, NVPFundamentalsComponent
 import { AboutComponent } from './about/about.component';
 import { TermsComponent } from './terms/terms.component';
 var routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'platform', component: PlatformComponent,
         children: [
@@ -22,7 +21,7 @@ var routes = [
             { path: 'overview', component: PlatformOverviewComponent },
             { path: 'getting-started', component: PlatformGettingStartedComponent },
             { path: 'techspecs', component: PlatformTechspecsComponent },
-            { path: 'downloads', component: PlatformDownloadsComponent }
+            { path: 'downloads', component: PlatformDownloadsComponent },
         ]
     },
     { path: 'simulator', component: SimulatorComponent,
@@ -43,6 +42,7 @@ var routes = [
     { path: 'explore/nvp-fundamentals', component: NVPFundamentalsComponent },
     { path: 'about', component: AboutComponent },
     { path: 'terms-and-conditions', component: TermsComponent },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
 var AppRoutingModule = /** @class */ (function () {
