@@ -57,25 +57,26 @@ export const AppRoutingModuleNgFactory:i0.NgModuleFactory<i1.AppRoutingModule> =
           i0.ɵmpd(512,i10.Location,i10.Location,[i10.LocationStrategy]),i0.ɵmpd(512,
               i0.NgModuleFactoryLoader,i0.SystemJsNgModuleLoader,[i0.Compiler,[2,i0.SystemJsNgModuleLoaderConfig]]),
           i0.ɵmpd(1024,i9.ROUTES,() => {
-            return [[{path:'',redirectTo:'/home',pathMatch:'full'},{path:'home',component:i11.HomeComponent},
-                {path:'platform',component:i12.PlatformComponent,children:[{path:'',
-                    redirectTo:'overview',pathMatch:'full'},{path:'overview',component:i12.PlatformOverviewComponent},
+            return [[{path:'',redirectTo:'/home',pathMatch:'full'},{path:'/',redirectTo:'/home',
+                pathMatch:'full'},{path:'home',component:i11.HomeComponent},{path:'platform',
+                component:i12.PlatformComponent,children:[{path:'',redirectTo:'overview',
+                    pathMatch:'full'},{path:'overview',component:i12.PlatformOverviewComponent},
                     {path:'getting-started',component:i12.PlatformGettingStartedComponent},
                     {path:'techspecs',component:i12.PlatformTechspecsComponent},{path:'downloads',
                         component:i12.PlatformDownloadsComponent}]},{path:'simulator',
-                    component:i13.SimulatorComponent,children:[{path:'',redirectTo:'overview',
-                        pathMatch:'full'},{path:'overview',component:i13.SimulatorOverviewComponent},
-                        {path:'getting-started',component:i13.SimulatorGettingStartedComponent},
-                        {path:'concept-and-structure',component:i13.SimulatorConceptAndStructureComponent},
-                        {path:'example',component:i13.SimulatorExampleComponent}]},
-                {path:'showcase',component:i14.ShowcaseComponent},{path:'showcase/self-powered-wearables',
-                    component:i14.SelfPoweredWearablesComponent},{path:'showcase/transient-computing',
-                    component:i14.TransientComputingComponent},{path:'showcase/low-power-iot',
-                    component:i14.LowPowerIoTComponent},{path:'explore',component:i15.ExploreComponent},
+                component:i13.SimulatorComponent,children:[{path:'',redirectTo:'overview',
+                    pathMatch:'full'},{path:'overview',component:i13.SimulatorOverviewComponent},
+                    {path:'getting-started',component:i13.SimulatorGettingStartedComponent},
+                    {path:'concept-and-structure',component:i13.SimulatorConceptAndStructureComponent},
+                    {path:'example',component:i13.SimulatorExampleComponent}]},{path:'showcase',
+                component:i14.ShowcaseComponent},{path:'showcase/self-powered-wearables',
+                component:i14.SelfPoweredWearablesComponent},{path:'showcase/transient-computing',
+                component:i14.TransientComputingComponent},{path:'showcase/low-power-iot',
+                component:i14.LowPowerIoTComponent},{path:'explore',component:i15.ExploreComponent},
                 {path:'explore/recommended-reading',component:i15.RecommendedReadingComponent},
                 {path:'explore/nvp-fundamentals',component:i15.NVPFundamentalsComponent},
                 {path:'about',component:i16.AboutComponent},{path:'terms-and-conditions',
-                    component:i17.TermsComponent}]];
+                    component:i17.TermsComponent},{path:'**',redirectTo:'/home',pathMatch:'full'}]];
           },([] as any[])),i0.ɵmpd(1024,i9.Router,i9.ɵe,[i0.ApplicationRef,i9.UrlSerializer,
               i9.ChildrenOutletContexts,i10.Location,i0.Injector,i0.NgModuleFactoryLoader,
               i0.Compiler,i9.ROUTES,i9.ROUTER_CONFIGURATION,[2,i9.UrlHandlingStrategy],
@@ -83,4 +84,4 @@ export const AppRoutingModuleNgFactory:i0.NgModuleFactory<i1.AppRoutingModule> =
               [[2,i9.ɵa],[2,i9.Router]]),i0.ɵmpd(512,i1.AppRoutingModule,i1.AppRoutingModule,
               ([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvc3VmYW5nL09uZURyaXZlL05WTGFicy9zcmMvYXBwL2FwcC1yb3V0aW5nLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9DOi9Vc2Vycy9zdWZhbmcvT25lRHJpdmUvTlZMYWJzL3NyYy9hcHAvYXBwLXJvdXRpbmcubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvc3VmYW5nL09uZURyaXZlL05WTGFicy9zcmMvYXBwL2FwcC1yb3V0aW5nLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9DOi9Vc2Vycy9zdWZhbmcvT25lRHJpdmUvTlZMYWJzL3NyYy9hcHAvYXBwLXJvdXRpbmcubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9

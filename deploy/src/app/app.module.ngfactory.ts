@@ -138,15 +138,15 @@ export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.A
               ([] as any[])),i0.ɵmpd(512,i0.NgModuleFactoryLoader,i0.SystemJsNgModuleLoader,
               [i0.Compiler,[2,i0.SystemJsNgModuleLoaderConfig]]),i0.ɵmpd(1024,i22.ROUTES,
               () => {
-                return [[{path:'',redirectTo:'/home',pathMatch:'full'},{path:'home',
-                    component:i28.HomeComponent},{path:'platform',component:i29.PlatformComponent,
-                    children:[{path:'',redirectTo:'overview',pathMatch:'full'},{path:'overview',
-                        component:i29.PlatformOverviewComponent},{path:'getting-started',
-                        component:i29.PlatformGettingStartedComponent},{path:'techspecs',
-                        component:i29.PlatformTechspecsComponent},{path:'downloads',
-                        component:i29.PlatformDownloadsComponent}]},{path:'simulator',
-                    component:i30.SimulatorComponent,children:[{path:'',redirectTo:'overview',
-                        pathMatch:'full'},{path:'overview',component:i30.SimulatorOverviewComponent},
+                return [[{path:'',redirectTo:'/home',pathMatch:'full'},{path:'/',redirectTo:'/home',
+                    pathMatch:'full'},{path:'home',component:i28.HomeComponent},{path:'platform',
+                    component:i29.PlatformComponent,children:[{path:'',redirectTo:'overview',
+                        pathMatch:'full'},{path:'overview',component:i29.PlatformOverviewComponent},
+                        {path:'getting-started',component:i29.PlatformGettingStartedComponent},
+                        {path:'techspecs',component:i29.PlatformTechspecsComponent},
+                        {path:'downloads',component:i29.PlatformDownloadsComponent}]},
+                    {path:'simulator',component:i30.SimulatorComponent,children:[{path:'',
+                        redirectTo:'overview',pathMatch:'full'},{path:'overview',component:i30.SimulatorOverviewComponent},
                         {path:'getting-started',component:i30.SimulatorGettingStartedComponent},
                         {path:'concept-and-structure',component:i30.SimulatorConceptAndStructureComponent},
                         {path:'example',component:i30.SimulatorExampleComponent}]},
@@ -157,7 +157,8 @@ export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.A
                     {path:'explore/recommended-reading',component:i32.RecommendedReadingComponent},
                     {path:'explore/nvp-fundamentals',component:i32.NVPFundamentalsComponent},
                     {path:'about',component:i33.AboutComponent},{path:'terms-and-conditions',
-                        component:i34.TermsComponent}]];
+                        component:i34.TermsComponent},{path:'**',redirectTo:'/home',
+                        pathMatch:'full'}]];
               },([] as any[])),i0.ɵmpd(1024,i22.Router,i22.ɵe,[i0.ApplicationRef,i22.UrlSerializer,
               i22.ChildrenOutletContexts,i12.Location,i0.Injector,i0.NgModuleFactoryLoader,
               i0.Compiler,i22.ROUTES,i22.ROUTER_CONFIGURATION,[2,i22.UrlHandlingStrategy],
@@ -168,4 +169,4 @@ export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.A
           i0.ɵmpd(512,i1.AppModule,i1.AppModule,([] as any[])),i0.ɵmpd(256,i26.LAZY_MAPS_API_CONFIG,
               {apiKey:'AIzaSyDFquj9AnLZG3zPXBPdovChfCxujtu2V8E'},([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvc3VmYW5nL09uZURyaXZlL05WTGFicy9zcmMvYXBwL2FwcC5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vQzovVXNlcnMvc3VmYW5nL09uZURyaXZlL05WTGFicy9zcmMvYXBwL2FwcC5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvc3VmYW5nL09uZURyaXZlL05WTGFicy9zcmMvYXBwL2FwcC5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vQzovVXNlcnMvc3VmYW5nL09uZURyaXZlL05WTGFicy9zcmMvYXBwL2FwcC5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9

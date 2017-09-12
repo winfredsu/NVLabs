@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
 var AboutComponent = /** @class */ (function () {
     function AboutComponent(title) {
         this.lat = 40.005217;
@@ -58,14 +60,14 @@ var AboutComponent = /** @class */ (function () {
         });
     };
     AboutComponent = __decorate([
-        Component({
+        core_1.Component({
             moduleId: module.id,
             selector: 'nvlabs-about',
             templateUrl: './about.component.html'
         }),
-        __metadata("design:paramtypes", [Title])
+        __metadata("design:paramtypes", [platform_browser_1.Title])
     ], AboutComponent);
     return AboutComponent;
 }());
-export { AboutComponent };
+exports.AboutComponent = AboutComponent;
 //# sourceMappingURL=about.component.js.map
