@@ -10,6 +10,7 @@ import { TermsComponent } from './terms/terms.component';
 
 const routes: Routes = [
 	{ path: '', redirectTo: '/home', pathMatch: 'full' },
+	{ path: '/', redirectTo: '/home', pathMatch: 'full' },
 	{ path: 'home', component: HomeComponent },
 	{ path: 'platform', component: PlatformComponent,
 		children: [
@@ -38,6 +39,7 @@ const routes: Routes = [
 	{ path: 'explore/nvp-fundamentals', component: NVPFundamentalsComponent },
 	{ path: 'about', component: AboutComponent },
 	{ path: 'terms-and-conditions', component: TermsComponent },
+	{ path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
