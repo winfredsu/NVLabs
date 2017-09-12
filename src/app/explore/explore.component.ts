@@ -28,7 +28,7 @@ export class NVPFundamentalsComponent {
         const tree = this.router.parseUrl(this.router.url);
         if (tree.fragment) {
           const element = document.querySelector("#" + tree.fragment);
-          if (element) { element.scrollIntoView(element); }
+          if (element) { element.scrollIntoView(); }
         }
       }
     });

@@ -86,7 +86,7 @@ export class SimulatorConceptAndStructureComponent {
   onAnchorClick ( ) {
     this.route.fragment.subscribe ( f => {
       const element = document.querySelector ( "#" + f );
-      if ( element ) element.scrollIntoView ( element );
+      if ( element ) element.scrollIntoView ();
     });
   }
 }

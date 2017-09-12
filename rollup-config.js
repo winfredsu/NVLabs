@@ -5,11 +5,11 @@ import uglify      from 'rollup-plugin-uglify';
 export default {
   input: 'src/main-aot.js',
   output: {
-  	file: 'aot/dist/build.js', // output a single application bundle
+  	file: 'deploy/dist/build.js', // output a single application bundle
   	format: 'iife'
   },
   sourcemap: true,
-  sourcemapFile: 'aot/dist/build.js.map',
+  sourcemapFile: 'deploy/dist/build.js.map',
   onwarn: function(warning) {
     // Skip certain warnings
 

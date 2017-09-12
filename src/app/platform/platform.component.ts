@@ -77,8 +77,8 @@ export class PlatformComponent implements OnInit {
 
 	openDialog(): void {
 		let dialogRef = this.dialog.open(BuyNowDialog, {
-			width: '600px',
-			height: '400px'
+			width: '700px',
+			height: 'auto'
 		});
 	}
 
