@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -11,11 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("../app.component");
-var material_1 = require("@angular/material");
+import { Component, HostListener, Inject, Input } from '@angular/core';
+import { DOCUMENT, Title } from '@angular/platform-browser';
+import { AppComponent } from '../app.component';
+import { MdDialog, MdDialogRef } from '@angular/material';
 var HomeComponent = /** @class */ (function () {
     function HomeComponent(dialog, document, appComponent, title) {
         this.dialog = dialog;
@@ -51,47 +49,47 @@ var HomeComponent = /** @class */ (function () {
         });
     };
     __decorate([
-        core_1.HostListener('window:scroll', []),
+        HostListener('window:scroll', []),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], HomeComponent.prototype, "onWindowScroll", null);
     __decorate([
-        core_1.HostListener('window:resize', ['$event']),
+        HostListener('window:resize', ['$event']),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Object]),
         __metadata("design:returntype", void 0)
     ], HomeComponent.prototype, "onResize", null);
     HomeComponent = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvlabs-home',
             templateUrl: './home.component.html'
             // styleUrls: ['./app.component.css']	
         }),
-        __param(1, core_1.Inject(platform_browser_1.DOCUMENT)),
-        __param(2, core_1.Input('AppComponent')),
-        __metadata("design:paramtypes", [material_1.MdDialog,
+        __param(1, Inject(DOCUMENT)),
+        __param(2, Input('AppComponent')),
+        __metadata("design:paramtypes", [MdDialog,
             Document,
-            app_component_1.AppComponent,
-            platform_browser_1.Title])
+            AppComponent,
+            Title])
     ], HomeComponent);
     return HomeComponent;
 }());
-exports.HomeComponent = HomeComponent;
+export { HomeComponent };
 var NVPOneMinuteDialog = /** @class */ (function () {
     function NVPOneMinuteDialog(dialogRef) {
         this.dialogRef = dialogRef;
     }
     NVPOneMinuteDialog = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvp-one-minute-dialog',
             templateUrl: './nvp-one-minute-dialog.html'
         }),
-        __metadata("design:paramtypes", [material_1.MdDialogRef])
+        __metadata("design:paramtypes", [MdDialogRef])
     ], NVPOneMinuteDialog);
     return NVPOneMinuteDialog;
 }());
-exports.NVPOneMinuteDialog = NVPOneMinuteDialog;
+export { NVPOneMinuteDialog };
 //# sourceMappingURL=home.component.js.map

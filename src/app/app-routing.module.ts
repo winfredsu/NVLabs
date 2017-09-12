@@ -10,7 +10,6 @@ import { TermsComponent } from './terms/terms.component';
 
 const routes: Routes = [
 	{ path: '', redirectTo: '/home', pathMatch: 'full' },
-	{ path: '/', redirectTo: '/home', pathMatch: 'full' },
 	{ path: 'home', component: HomeComponent },
 	{ path: 'platform', component: PlatformComponent,
 		children: [

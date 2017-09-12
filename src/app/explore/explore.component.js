@@ -1,4 +1,3 @@
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,10 +7,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var platform_browser_1 = require("@angular/platform-browser");
+import { Component } from '@angular/core';
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 var ExploreComponent = /** @class */ (function () {
     function ExploreComponent(router, title) {
         if (router.url === '/explore') {
@@ -19,16 +17,16 @@ var ExploreComponent = /** @class */ (function () {
         }
     }
     ExploreComponent = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvlabs-explore',
             templateUrl: './explore.component.html'
         }),
-        __metadata("design:paramtypes", [router_1.Router, platform_browser_1.Title])
+        __metadata("design:paramtypes", [Router, Title])
     ], ExploreComponent);
     return ExploreComponent;
 }());
-exports.ExploreComponent = ExploreComponent;
+export { ExploreComponent };
 var NVPFundamentalsComponent = /** @class */ (function () {
     function NVPFundamentalsComponent(route, router) {
         this.route = route;
@@ -37,7 +35,7 @@ var NVPFundamentalsComponent = /** @class */ (function () {
     NVPFundamentalsComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.router.events.subscribe(function (s) {
-            if (s instanceof router_1.NavigationEnd) {
+            if (s instanceof NavigationEnd) {
                 var tree = _this.router.parseUrl(_this.router.url);
                 if (tree.fragment) {
                     var element = document.querySelector("#" + tree.fragment);
@@ -58,16 +56,16 @@ var NVPFundamentalsComponent = /** @class */ (function () {
         });
     };
     NVPFundamentalsComponent = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvlabs-fundamentals',
             templateUrl: './nvp-fundamentals.component.html'
         }),
-        __metadata("design:paramtypes", [router_1.ActivatedRoute, router_1.Router])
+        __metadata("design:paramtypes", [ActivatedRoute, Router])
     ], NVPFundamentalsComponent);
     return NVPFundamentalsComponent;
 }());
-exports.NVPFundamentalsComponent = NVPFundamentalsComponent;
+export { NVPFundamentalsComponent };
 var RecommendedReadingComponent = /** @class */ (function () {
     function RecommendedReadingComponent(title) {
         this.reviewPapers = [
@@ -216,14 +214,14 @@ var RecommendedReadingComponent = /** @class */ (function () {
         title.setTitle('Recommended Reading | NVLabs');
     }
     RecommendedReadingComponent = __decorate([
-        core_1.Component({
+        Component({
             moduleId: module.id,
             selector: 'nvlabs-recommended-reading',
             templateUrl: './recommended-reading.component.html'
         }),
-        __metadata("design:paramtypes", [platform_browser_1.Title])
+        __metadata("design:paramtypes", [Title])
     ], RecommendedReadingComponent);
     return RecommendedReadingComponent;
 }());
-exports.RecommendedReadingComponent = RecommendedReadingComponent;
+export { RecommendedReadingComponent };
 //# sourceMappingURL=explore.component.js.map
